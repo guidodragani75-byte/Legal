@@ -1,0 +1,565 @@
+[
+  {
+    "noticia": {
+      "id": "caso_facturacion_monotributo",
+      "fuente": "Cámara Nacional del Trabajo",
+      "titulo": "Condenan a empresa logística a indemnizar a chofer que hacían facturar como monotributista",
+      "resumen": "La Sala V determinó que existió relación de dependencia encubierta durante 4 años y ordenó el pago de indemnización y multas.",
+      "link": "https://www.pjn.gov.ar",
+      "fecha": "Fallo reciente"
+    },
+    "analisis": {
+      "relevante": true,
+      "puntaje": 10,
+      "monto": "$24.800.000",
+      "razon": "La Cámara acreditó fraude a la ley de contrato de trabajo y condenó a abonar antigüedad, preaviso y multas de las leyes 24.013 y 25.323.",
+      "tipo": "Sentencia",
+      "titulo_caratula": "CONDENAN A EMPRESA POR FRAUDE LABORAL",
+      "gancho": "¿Te obligan a facturar como monotributista pero tenés horario y jefe? ¡Te están estafando!",
+      "puntos_clave": [
+        "La empresa logística obligaba al chofer a facturar sus servicios para evitar registrarlo como empleado.",
+        "La Justicia confirmó que existía una relación laboral real porque cumplía horario y recibía órdenes directas.",
+        "El trabajador tiene derecho a cobrar antigüedad, preaviso y todas las multas por trabajo no registrado."
+      ],
+      "cta": "Consultá tu caso por privado ahora.",
+      "caption": "¡Atención! ⚠️ Si sos chofer o trabajás bajo la modalidad de monotributo pero tenés que cumplir horarios, pedir permiso para faltar y recibir órdenes, esto te interesa.\n\nLa Justicia acaba de condenar a una empresa logística a pagar $24.800.000 por tener a un trabajador en fraude laboral. 🚛💨\n\n¿Qué significa esto? Que no importa si firmaste un contrato de locación de servicios o si emitís facturas: si hay subordinación, hay relación de dependencia. Y si hay relación de dependencia, ¡te corresponden todos los beneficios de la Ley de Contrato de Trabajo!\n\nNo dejes que se aprovechen de tu necesidad. Si estás en esta situación, tenés derecho a reclamar lo que te corresponde por ley.\n\n¿Tenés dudas sobre tu situación? Escribime por privado y analizo tu caso sin compromiso. ⚖️💼",
+      "hashtags": [
+        "#DerechoLaboral",
+        "#Indemnizacion",
+        "#Despidos",
+        "#JuicioLaboral",
+        "#AbogadoLaboral"
+      ]
+    },
+    "imagen_path": "output\\caso_facturacion_monotributo.png"
+  },
+  {
+    "noticia": {
+      "id": "d40be419f84573bdb4ea0b28ca64ea78",
+      "fuente": "Infobae Judiciales",
+      "titulo": "Procesaron a un camarista de Córdoba por abuso de autoridad y lesiones graves",
+      "resumen": "El fallo alcanzó a Abel Sánchez Torres por una decisión en la causa “Humanes” y por el presunto maltrato laboral denunciado por una secretaria judicial",
+      "link": "https://www.infobae.com/judiciales/2026/09/26/procesaron-a-un-camarista-de-cordoba-por-abuso-de-autoridad-y-lesiones-graves/",
+      "fecha": "Sat, 26 Sep 2026 05:53:12 +0000"
+    },
+    "analisis": {
+      "relevante": true,
+      "puntaje": 8,
+      "monto": "CONDENA MILLONARIA",
+      "razon": "Se procesó a un camarista por abuso de autoridad y lesiones graves tras una denuncia por maltrato laboral ejercido contra una secretaria judicial bajo su dependencia.",
+      "tipo": "Sentencia",
+      "titulo_caratula": "MALTRATO LABORAL: PROCESAN A CAMARISTA",
+      "gancho": "¿Sentís que tu jefe abusa de su poder y te enferma trabajar ahí?",
+      "puntos_clave": [
+        "Un camarista fue procesado por abuso de autoridad y lesiones graves tras denuncias de maltrato.",
+        "La Justicia confirmó que el hostigamiento sistemático en el ámbito laboral es un delito grave.",
+        "Tenés derecho a un ambiente de trabajo libre de violencia y a denunciar el acoso laboral."
+      ],
+      "cta": "Escribime por privado, tu consulta es confidencial.",
+      "caption": "El maltrato laboral no es parte del trabajo, es una violación a tus derechos fundamentales. 🚫⚖️\n\nRecientemente, la Justicia procesó a un camarista por abuso de autoridad y lesiones graves tras las denuncias de una secretaria judicial. Este fallo marca un precedente clave: el poder jerárquico no le da derecho a nadie a humillarte, maltratarte o afectar tu salud física y mental.\n\nSi sentís que estás viviendo una situación de hostigamiento, gritos, amenazas o abuso de poder en tu oficina, no estás sola/o. El acoso laboral (mobbing) es una realidad que se puede y se debe denunciar.\n\n¿Sentís que tu salud se está deteriorando por culpa de tu jefe? No te quedes callado/a. La ley te protege.\n\n📩 Escribime por privado para asesorarte de forma confidencial. ¡Hagamos valer tus derechos!",
+      "hashtags": [
+        "#DerechoLaboral",
+        "#AcosoLaboral",
+        "#Mobbing",
+        "#JusticiaLaboral",
+        "#AbogadoLaboral"
+      ]
+    },
+    "imagen_path": "output\\d40be419f84573bdb4ea0b28ca64ea78.png"
+  },
+  {
+    "id": "nl_suc_juzgcivil6_tracto_abreviado",
+    "noticia_id": "nl_suc_juzgcivil6_tracto_abreviado",
+    "vertical": "sucesiones",
+    "nicho": "sucesiones",
+    "tipo_caso": "Sentencia",
+    "monto": "$ 85.000.000",
+    "titulo": "Autorizan venta inmobiliaria por tracto abreviado para coherederos sin doble tributación",
+    "caratula_path": "output\\nl_suc_juzgcivil6_tracto_abreviado.png",
+    "imagen_path": "output\\nl_suc_juzgcivil6_tracto_abreviado.png",
+    "copy_ig": "¿Falleció un familiar y necesitás tramitar la declaratoria de herederos sin demoras?\n\nCuando fallece un titular registral, postergar la sucesión suele generar trabas familiares, deudas y desvalorización de los bienes.\n\n📌 Puntos clave que debés conocer:\n• La declaratoria judicial de herederos regulariza la titularidad de casas, autos y cuentas.\n• Podés iniciar el expediente únicamente con las partidas de defunción y parentesco.\n• Acompañamos todo el trámite sucesorio con honorarios transparentes y pactados al cierre.\n\n📲 Escribinos por WhatsApp para iniciar tu sucesión gratis desde el enlace de nuestro perfil.\n\n#Sucesiones #Herencias #DeclaratoriaDeHerederos #TractoAbreviado #AbogadoSucesiones",
+    "caption": "¿Falleció un familiar y necesitás tramitar la declaratoria de herederos sin demoras?\n\nCuando fallece un titular registral, postergar la sucesión suele generar trabas familiares, deudas y desvalorización de los bienes.\n\n📌 Puntos clave que debés conocer:\n• La declaratoria judicial de herederos regulariza la titularidad de casas, autos y cuentas.\n• Podés iniciar el expediente únicamente con las partidas de defunción y parentesco.\n• Acompañamos todo el trámite sucesorio con honorarios transparentes y pactados al cierre.\n\n📲 Escribinos por WhatsApp para iniciar tu sucesión gratis desde el enlace de nuestro perfil.\n\n#Sucesiones #Herencias #DeclaratoriaDeHerederos #TractoAbreviado #AbogadoSucesiones",
+    "copy_tiktok": "¿Falleció un familiar y necesitás tramitar la declaratoria de herederos sin demoras? 📜\nMuchos creen que una sucesión tarda 10 años, pero hoy con tracto abreviado podés vender rápido y sin trabas.\nEscribinos por WhatsApp en el enlace de la bio para asesorarte. #Sucesiones #Herencias #DeclaratoriaDeHerederos #TractoAbreviado #AbogadoSucesiones",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos.",
+      "hook_3s": "¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos.",
+      "visual_hook": "[TEXTO GIGANTE EN PANTALLA: ¿TRABA EN LA SUCESIÓN? + ALERTA]",
+      "desarrollo": "En el derecho argentino no necesitás el consentimiento de todos los herederos para iniciar el trámite. Un solo coheredero puede presentarse ante el juzgado civil con las partidas, publicar los edictos y obtener la declaratoria judicial de herederos formal. Una vez declarados, los bienes pueden inscribirse por tracto abreviado para venderlos directamente a un comprador sin pagar doble escrituración ni dobles honorarios.",
+      "indicaciones_visuales": "[TEXTO: DECLARATORIA SIN TRABAS + GRÁFICA TRACTO ABREVIADO]",
+      "cta": "Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.",
+      "texto_completo": "¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos. En el derecho argentino no necesitás el consentimiento de todos los herederos para iniciar el trámite. Un solo coheredero puede presentarse ante el juzgado civil con las partidas, publicar los edictos y obtener la declaratoria judicial de herederos formal. Una vez declarados, los bienes pueden inscribirse por tracto abreviado para venderlos directamente a un comprador sin pagar doble escrituración ni dobles honorarios. Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos.\", \"hook_3s\": \"¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos.\", \"visual_hook\": \"[TEXTO GIGANTE EN PANTALLA: ¿TRABA EN LA SUCESIÓN? + ALERTA]\", \"desarrollo\": \"En el derecho argentino no necesitás el consentimiento de todos los herederos para iniciar el trámite. Un solo coheredero puede presentarse ante el juzgado civil con las partidas, publicar los edictos y obtener la declaratoria judicial de herederos formal. Una vez declarados, los bienes pueden inscribirse por tracto abreviado para venderlos directamente a un comprador sin pagar doble escrituración ni dobles honorarios.\", \"indicaciones_visuales\": \"[TEXTO: DECLARATORIA SIN TRABAS + GRÁFICA TRACTO ABREVIADO]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.\", \"texto_completo\": \"¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos. En el derecho argentino no necesitás el consentimiento de todos los herederos para iniciar el trámite. Un solo coheredero puede presentarse ante el juzgado civil con las partidas, publicar los edictos y obtener la declaratoria judicial de herederos formal. Una vez declarados, los bienes pueden inscribirse por tracto abreviado para venderlos directamente a un comprador sin pagar doble escrituración ni dobles honorarios. Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20quiero%20iniciar%20una%20declaratoria%20de%20herederos%20/%20tr%C3%A1mite%20de%20sucesi%C3%B3n%20por%20un%20acervo%20de%20%24%2085.000.000%20y%20consultar%20los%20pasos%20a%20seguir.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20quiero%20iniciar%20una%20declaratoria%20de%20herederos%20/%20tr%C3%A1mite%20de%20sucesi%C3%B3n%20por%20un%20acervo%20de%20%24%2085.000.000%20y%20consultar%20los%20pasos%20a%20seguir.",
+    "wa_mensaje": "Hola, quiero iniciar una declaratoria de herederos / trámite de sucesión por un acervo de $ 85.000.000 y consultar los pasos a seguir.",
+    "estado": "deleted",
+    "status": "deleted",
+    "hashtags": [
+      "#Sucesiones",
+      "#Herencias",
+      "#DeclaratoriaDeHerederos",
+      "#TractoAbreviado",
+      "#AbogadoSucesiones"
+    ],
+    "puntos_clave": [
+      "La declaratoria judicial de herederos regulariza la titularidad de casas, autos y cuentas.",
+      "Podés iniciar el expediente únicamente con las partidas de defunción y parentesco.",
+      "Acompañamos todo el trámite sucesorio con honorarios transparentes y pactados al cierre."
+    ],
+    "noticia": {
+      "id": "nl_suc_juzgcivil6_tracto_abreviado",
+      "fuente": "ninolegal_sucesiones",
+      "titulo": "Autorizan venta inmobiliaria por tracto abreviado para coherederos sin doble tributación",
+      "resumen": "Herederos universales con comprador interesado acordado requerían enajenar urgentemente una propiedad familiar indivisa para saldar cargas tributarias sin esperar inscripciones intermedias.",
+      "link": "https://ninolegal.com/dashboard/assistants/legal/familia-y-sucesiones/causa-sanmartin6-rossi-85000",
+      "fecha": "2026-09-24",
+      "nicho": "sucesiones",
+      "vertical": "sucesiones",
+      "tribunal": "Juzgado de Primera Instancia en lo Civil y Comercial N° 6 de San Martín",
+      "caratula": "Rossi, Elena s/ Sucesión Testamentaria y Ab-Intestato",
+      "monto": "$ 85.000.000"
+    },
+    "analisis": {
+      "relevante": true,
+      "nicho": "sucesiones",
+      "vertical": "sucesiones",
+      "puntaje": 9,
+      "monto": "$ 85.000.000",
+      "razon": "El tribunal aprobó la venta judicial por tracto abreviado registral (art. 16 Ley 17.801), designó escribano autorizante y ordenó el libramiento de oficios para la inscripción directa a nombre del adquirente.",
+      "tipo": "Sentencia",
+      "titulo_caratula": "Autorizan venta inmobiliaria por tracto abreviado para coherederos sin doble tributación",
+      "gancho": "Herederos universales con comprador interesado acordado requerían enajenar urgentemente una propiedad familiar indivisa para saldar cargas tributarias sin esperar inscripciones intermedias.",
+      "puntos_clave": [
+        "La declaratoria judicial de herederos regulariza la titularidad de casas, autos y cuentas.",
+        "Podés iniciar el expediente únicamente con las partidas de defunción y parentesco.",
+        "Acompañamos todo el trámite sucesorio con honorarios transparentes y pactados al cierre."
+      ],
+      "cta": "Escribinos por WhatsApp para iniciar tu sucesión gratis",
+      "caption": "¿Falleció un familiar y necesitás tramitar la declaratoria de herederos sin demoras?\n\nCuando fallece un titular registral, postergar la sucesión suele generar trabas familiares, deudas y desvalorización de los bienes.\n\n📌 Puntos clave que debés conocer:\n• La declaratoria judicial de herederos regulariza la titularidad de casas, autos y cuentas.\n• Podés iniciar el expediente únicamente con las partidas de defunción y parentesco.\n• Acompañamos todo el trámite sucesorio con honorarios transparentes y pactados al cierre.\n\n📲 Escribinos por WhatsApp para iniciar tu sucesión gratis desde el enlace de nuestro perfil.\n\n#Sucesiones #Herencias #DeclaratoriaDeHerederos #TractoAbreviado #AbogadoSucesiones",
+      "hashtags": [
+        "#Sucesiones",
+        "#Herencias",
+        "#DeclaratoriaDeHerederos",
+        "#TractoAbreviado",
+        "#AbogadoSucesiones"
+      ],
+      "copy_instagram": "¿Falleció un familiar y necesitás tramitar la declaratoria de herederos sin demoras?\n\nCuando fallece un titular registral, postergar la sucesión suele generar trabas familiares, deudas y desvalorización de los bienes.\n\n📌 Puntos clave que debés conocer:\n• La declaratoria judicial de herederos regulariza la titularidad de casas, autos y cuentas.\n• Podés iniciar el expediente únicamente con las partidas de defunción y parentesco.\n• Acompañamos todo el trámite sucesorio con honorarios transparentes y pactados al cierre.\n\n📲 Escribinos por WhatsApp para iniciar tu sucesión gratis desde el enlace de nuestro perfil.\n\n#Sucesiones #Herencias #DeclaratoriaDeHerederos #TractoAbreviado #AbogadoSucesiones",
+      "copy_tiktok": "¿Falleció un familiar y necesitás tramitar la declaratoria de herederos sin demoras? 📜\nMuchos creen que una sucesión tarda 10 años, pero hoy con tracto abreviado podés vender rápido y sin trabas.\nEscribinos por WhatsApp en el enlace de la bio para asesorarte. #Sucesiones #Herencias #DeclaratoriaDeHerederos #TractoAbreviado #AbogadoSucesiones",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos.",
+        "hook_3s": "¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos.",
+        "visual_hook": "[TEXTO GIGANTE EN PANTALLA: ¿TRABA EN LA SUCESIÓN? + ALERTA]",
+        "desarrollo": "En el derecho argentino no necesitás el consentimiento de todos los herederos para iniciar el trámite. Un solo coheredero puede presentarse ante el juzgado civil con las partidas, publicar los edictos y obtener la declaratoria judicial de herederos formal. Una vez declarados, los bienes pueden inscribirse por tracto abreviado para venderlos directamente a un comprador sin pagar doble escrituración ni dobles honorarios.",
+        "indicaciones_visuales": "[TEXTO: DECLARATORIA SIN TRABAS + GRÁFICA TRACTO ABREVIADO]",
+        "cta": "Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo.",
+        "texto_completo": "¿Falleció un familiar y un heredero no quiere firmar la sucesión para vender? Te explico cómo avanzar en 30 segundos. En el derecho argentino no necesitás el consentimiento de todos los herederos para iniciar el trámite. Un solo coheredero puede presentarse ante el juzgado civil con las partidas, publicar los edictos y obtener la declaratoria judicial de herederos formal. Una vez declarados, los bienes pueden inscribirse por tracto abreviado para venderlos directamente a un comprador sin pagar doble escrituración ni dobles honorarios. Tocá el enlace de WhatsApp en nuestra bio para asesorarte sobre tu sucesión familiar hoy mismo."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20quiero%20iniciar%20una%20declaratoria%20de%20herederos%20/%20tr%C3%A1mite%20de%20sucesi%C3%B3n%20por%20un%20acervo%20de%20%24%2085.000.000%20y%20consultar%20los%20pasos%20a%20seguir.",
+      "wa_mensaje": "Hola, quiero iniciar una declaratoria de herederos / trámite de sucesión por un acervo de $ 85.000.000 y consultar los pasos a seguir."
+    }
+  },
+  {
+    "id": "nl_lab_art_tunel_carpiano_cajera",
+    "noticia_id": "nl_lab_art_tunel_carpiano_cajera",
+    "vertical": "laboral",
+    "nicho": "laboral",
+    "tipo_caso": "Sentencia",
+    "monto": "$ 19.500.000",
+    "titulo": "Cámara Laboral ordena indemnizar síndrome de túnel carpiano bilateral en cajera de supermercado",
+    "caratula_path": "output\\nl_lab_art_tunel_carpiano_cajera.png",
+    "imagen_path": "output\\nl_lab_art_tunel_carpiano_cajera.png",
+    "copy_ig": "¿Sabías que podés reclamar una indemnización si sufrís síndrome del túnel carpiano?\n\nMirá este caso real donde la justicia condenó a pagar de $ 19.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 19.500.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+    "caption": "¿Sabías que podés reclamar una indemnización si sufrís síndrome del túnel carpiano?\n\nMirá este caso real donde la justicia condenó a pagar de $ 19.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 19.500.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+    "copy_tiktok": "¿Sabías que podés reclamar una indemnización si sufrís síndrome del túnel carpiano? ⚖️\nMirá este caso real: indemnización de $ 19.500.000 dictada por la justicia.\nConsultá tu caso con tu abogado laboralista desde el enlace de nuestro perfil. #AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real.",
+      "hook_3s": "¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real.",
+      "visual_hook": "[TEXTO GIGANTE EN ROJO: ¿INDEMNIZACIÓN POR TÚNEL CARPIANO? DE $ 19.500.000]",
+      "desarrollo": "La justicia laboral acaba de sentenciar una condena de $ 19.500.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo.",
+      "indicaciones_visuales": "[TEXTO EN PANTALLA: PERICIA MÉDICA JUDICIAL + LEY 24.557]",
+      "cta": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+      "texto_completo": "¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real. La justicia laboral acaba de sentenciar una condena de $ 19.500.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real.\", \"hook_3s\": \"¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real.\", \"visual_hook\": \"[TEXTO GIGANTE EN ROJO: ¿INDEMNIZACIÓN POR TÚNEL CARPIANO? DE $ 19.500.000]\", \"desarrollo\": \"La justicia laboral acaba de sentenciar una condena de $ 19.500.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo.\", \"indicaciones_visuales\": \"[TEXTO EN PANTALLA: PERICIA MÉDICA JUDICIAL + LEY 24.557]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.\", \"texto_completo\": \"¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real. La justicia laboral acaba de sentenciar una condena de $ 19.500.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20indemnizaci%C3%B3n%20de%20%24%2019.500.000%20por%20t%C3%BAnel%20carpiano%20y%20quiero%20consultar%20mi%20caso%20con%20un%20abogado%20laboralista.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20indemnizaci%C3%B3n%20de%20%24%2019.500.000%20por%20t%C3%BAnel%20carpiano%20y%20quiero%20consultar%20mi%20caso%20con%20un%20abogado%20laboralista.",
+    "wa_mensaje": "Hola, vi la indemnización de $ 19.500.000 por túnel carpiano y quiero consultar mi caso con un abogado laboralista.",
+    "estado": "deleted",
+    "status": "deleted",
+    "hashtags": [
+      "#AccidenteDeTrabajo",
+      "#IndemnizacionART",
+      "#ReclamosART",
+      "#JuicioLaboral",
+      "#AbogadoLaboral"
+    ],
+    "puntos_clave": [
+      "La justicia laboral sentenció una indemnización de $ 19.500.000 por incapacidad física.",
+      "Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.",
+      "El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos."
+    ],
+    "noticia": {
+      "id": "nl_lab_art_tunel_carpiano_cajera",
+      "fuente": "ninolegal_laboral",
+      "titulo": "Cámara Laboral ordena indemnizar síndrome de túnel carpiano bilateral en cajera de supermercado",
+      "resumen": "Cajera con jornadas continuas de escaneo repetitivo de mercadería pesada que requirió descompresión quirúrgica en ambas muñecas. La ART negó la cobertura alegando factores constitucionales extra laborales.",
+      "link": "https://ninolegal.com/dashboard/assistants/legal/laboral-y-previsional/fallo-cnat-gimenez-tunelcarpiano-19500",
+      "fecha": "2026-09-21",
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "tribunal": "Cámara Nacional de Apelaciones del Trabajo - Sala III",
+      "caratula": "Giménez, Romina c/ SMG ART S.A. s/ Accidente - Ley especial",
+      "monto": "$ 19.500.000"
+    },
+    "analisis": {
+      "relevante": true,
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "puntaje": 9,
+      "monto": "$ 19.500.000",
+      "razon": "La Sala III revocó el rechazo patronal, acreditó trauma acumulativo por movimientos repetitivos y otorgó el pago de indemnización por 21% de incapacidad física laboral permanente.",
+      "tipo": "Sentencia",
+      "titulo_caratula": "Cámara Laboral ordena indemnizar síndrome de túnel carpiano bilateral en cajera de supermercado",
+      "gancho": "Cajera con jornadas continuas de escaneo repetitivo de mercadería pesada que requirió descompresión quirúrgica en ambas muñecas. La ART negó la cobertura alegando factores constitucionales extra laborales.",
+      "puntos_clave": [
+        "La justicia laboral sentenció una indemnización de $ 19.500.000 por incapacidad física.",
+        "Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.",
+        "El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos."
+      ],
+      "cta": "Consultá tu caso con tu abogado laboralista",
+      "caption": "¿Sabías que podés reclamar una indemnización si sufrís síndrome del túnel carpiano?\n\nMirá este caso real donde la justicia condenó a pagar de $ 19.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 19.500.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+      "hashtags": [
+        "#AccidenteDeTrabajo",
+        "#IndemnizacionART",
+        "#ReclamosART",
+        "#JuicioLaboral",
+        "#AbogadoLaboral"
+      ],
+      "copy_instagram": "¿Sabías que podés reclamar una indemnización si sufrís síndrome del túnel carpiano?\n\nMirá este caso real donde la justicia condenó a pagar de $ 19.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 19.500.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+      "copy_tiktok": "¿Sabías que podés reclamar una indemnización si sufrís síndrome del túnel carpiano? ⚖️\nMirá este caso real: indemnización de $ 19.500.000 dictada por la justicia.\nConsultá tu caso con tu abogado laboralista desde el enlace de nuestro perfil. #AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real.",
+        "hook_3s": "¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real.",
+        "visual_hook": "[TEXTO GIGANTE EN ROJO: ¿INDEMNIZACIÓN POR TÚNEL CARPIANO? DE $ 19.500.000]",
+        "desarrollo": "La justicia laboral acaba de sentenciar una condena de $ 19.500.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo.",
+        "indicaciones_visuales": "[TEXTO EN PANTALLA: PERICIA MÉDICA JUDICIAL + LEY 24.557]",
+        "cta": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+        "texto_completo": "¿Sabías que podés reclamar una indemnización si sufrís túnel carpiano? Mirá este caso real. La justicia laboral acaba de sentenciar una condena de $ 19.500.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20indemnizaci%C3%B3n%20de%20%24%2019.500.000%20por%20t%C3%BAnel%20carpiano%20y%20quiero%20consultar%20mi%20caso%20con%20un%20abogado%20laboralista.",
+      "wa_mensaje": "Hola, vi la indemnización de $ 19.500.000 por túnel carpiano y quiero consultar mi caso con un abogado laboralista."
+    }
+  },
+  {
+    "id": "nl_lab_art_hernia_disco_chofer",
+    "noticia_id": "nl_lab_art_hernia_disco_chofer",
+    "vertical": "laboral",
+    "nicho": "laboral",
+    "tipo_caso": "Sentencia",
+    "monto": "$ 31.400.000",
+    "titulo": "Condenan a ART a indemnizar hernia de disco lumbar en chofer de transporte de larga distancia",
+    "caratula_path": "output\\nl_lab_art_hernia_disco_chofer.png",
+    "imagen_path": "output\\nl_lab_art_hernia_disco_chofer.png",
+    "copy_ig": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco?\n\nMirá este caso real donde la justicia condenó a pagar de $ 31.400.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 31.400.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+    "caption": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco?\n\nMirá este caso real donde la justicia condenó a pagar de $ 31.400.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 31.400.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+    "copy_tiktok": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? ⚖️\nMirá este caso real: indemnización de $ 31.400.000 dictada por la justicia.\nConsultá tu caso con tu abogado laboralista desde el enlace de nuestro perfil. #AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real.",
+      "hook_3s": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real.",
+      "visual_hook": "[TEXTO GIGANTE EN ROJO: ¿INDEMNIZACIÓN POR HERNIA DE DISCO? DE $ 31.400.000]",
+      "desarrollo": "La justicia laboral acaba de sentenciar una condena de $ 31.400.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo.",
+      "indicaciones_visuales": "[TEXTO EN PANTALLA: PERICIA MÉDICA JUDICIAL + LEY 24.557]",
+      "cta": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+      "texto_completo": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real. La justicia laboral acaba de sentenciar una condena de $ 31.400.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real.\", \"hook_3s\": \"¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real.\", \"visual_hook\": \"[TEXTO GIGANTE EN ROJO: ¿INDEMNIZACIÓN POR HERNIA DE DISCO? DE $ 31.400.000]\", \"desarrollo\": \"La justicia laboral acaba de sentenciar una condena de $ 31.400.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo.\", \"indicaciones_visuales\": \"[TEXTO EN PANTALLA: PERICIA MÉDICA JUDICIAL + LEY 24.557]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.\", \"texto_completo\": \"¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real. La justicia laboral acaba de sentenciar una condena de $ 31.400.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20indemnizaci%C3%B3n%20de%20%24%2031.400.000%20por%20hernia%20de%20disco%20y%20quiero%20consultar%20mi%20caso%20con%20un%20abogado%20laboralista.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20indemnizaci%C3%B3n%20de%20%24%2031.400.000%20por%20hernia%20de%20disco%20y%20quiero%20consultar%20mi%20caso%20con%20un%20abogado%20laboralista.",
+    "wa_mensaje": "Hola, vi la indemnización de $ 31.400.000 por hernia de disco y quiero consultar mi caso con un abogado laboralista.",
+    "estado": "deleted",
+    "status": "deleted",
+    "hashtags": [
+      "#AccidenteDeTrabajo",
+      "#IndemnizacionART",
+      "#ReclamosART",
+      "#JuicioLaboral",
+      "#AbogadoLaboral"
+    ],
+    "puntos_clave": [
+      "La justicia laboral sentenció una indemnización de $ 31.400.000 por incapacidad física.",
+      "Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.",
+      "El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos."
+    ],
+    "noticia": {
+      "id": "nl_lab_art_hernia_disco_chofer",
+      "fuente": "ninolegal_laboral",
+      "titulo": "Condenan a ART a indemnizar hernia de disco lumbar en chofer de transporte de larga distancia",
+      "resumen": "Chofer de camión que sufrió hernia discal L4-L5 por esfuerzos de carga y vibraciones del vehículo. La ART le otorgó el alta médica con 0% de incapacidad alegando que la lesión era degenerativa e inculpable.",
+      "link": "https://ninolegal.com/dashboard/assistants/legal/laboral-y-previsional/fallo-cnat-ramirez-hernia-31400",
+      "fecha": "2026-09-26",
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "tribunal": "Cámara Nacional de Apelaciones del Trabajo - Sala VII",
+      "caratula": "Ramírez, Jorge c/ La Segunda ART S.A. s/ Accidente - Ley especial",
+      "monto": "$ 31.400.000"
+    },
+    "analisis": {
+      "relevante": true,
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "puntaje": 9,
+      "monto": "$ 31.400.000",
+      "razon": "La pericia médica oficial constató nexo de causalidad laboral y 24.5% de incapacidad permanente. El tribunal condenó a la aseguradora a pagar la indemnización tarifada con actualización por RIPTE e intereses.",
+      "tipo": "Sentencia",
+      "titulo_caratula": "Condenan a ART a indemnizar hernia de disco lumbar en chofer de transporte de larga distancia",
+      "gancho": "Chofer de camión que sufrió hernia discal L4-L5 por esfuerzos de carga y vibraciones del vehículo. La ART le otorgó el alta médica con 0% de incapacidad alegando que la lesión era degenerativa e inculpable.",
+      "puntos_clave": [
+        "La justicia laboral sentenció una indemnización de $ 31.400.000 por incapacidad física.",
+        "Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.",
+        "El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos."
+      ],
+      "cta": "Consultá tu caso con tu abogado laboralista",
+      "caption": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco?\n\nMirá este caso real donde la justicia condenó a pagar de $ 31.400.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 31.400.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+      "hashtags": [
+        "#AccidenteDeTrabajo",
+        "#IndemnizacionART",
+        "#ReclamosART",
+        "#JuicioLaboral",
+        "#AbogadoLaboral"
+      ],
+      "copy_instagram": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco?\n\nMirá este caso real donde la justicia condenó a pagar de $ 31.400.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización de $ 31.400.000 por incapacidad física.\n• Si la ART te dio el alta sin fijar secuela o tu empleador niega la lesión, tenés derecho a pericia judicial.\n• El reclamo se inicia sin adelanto de honorarios y con actualización monetaria de montos.\n\n📲 Consultá tu caso con tu abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+      "copy_tiktok": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? ⚖️\nMirá este caso real: indemnización de $ 31.400.000 dictada por la justicia.\nConsultá tu caso con tu abogado laboralista desde el enlace de nuestro perfil. #AccidenteDeTrabajo #IndemnizacionART #ReclamosART #JuicioLaboral #AbogadoLaboral",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real.",
+        "hook_3s": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real.",
+        "visual_hook": "[TEXTO GIGANTE EN ROJO: ¿INDEMNIZACIÓN POR HERNIA DE DISCO? DE $ 31.400.000]",
+        "desarrollo": "La justicia laboral acaba de sentenciar una condena de $ 31.400.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo.",
+        "indicaciones_visuales": "[TEXTO EN PANTALLA: PERICIA MÉDICA JUDICIAL + LEY 24.557]",
+        "cta": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo.",
+        "texto_completo": "¿Sabías que podés reclamar una indemnización si sufrís hernia de disco? Mirá este caso real. La justicia laboral acaba de sentenciar una condena de $ 31.400.000 a favor de un trabajador con esta afección. Aunque la ART te haya dado el alta médica o tu empleador desconozca la secuela, tenés derecho a una pericia médica judicial imparcial. Las indemnizaciones por incapacidad física se calculan según tu sueldo y porcentaje de daño conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para consultar tu caso con un abogado laboralista hoy mismo."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20indemnizaci%C3%B3n%20de%20%24%2031.400.000%20por%20hernia%20de%20disco%20y%20quiero%20consultar%20mi%20caso%20con%20un%20abogado%20laboralista.",
+      "wa_mensaje": "Hola, vi la indemnización de $ 31.400.000 por hernia de disco y quiero consultar mi caso con un abogado laboralista."
+    }
+  },
+  {
+    "id": "nl_lab_cnat_sala8_despido",
+    "noticia_id": "nl_lab_cnat_sala8_despido",
+    "vertical": "laboral",
+    "nicho": "laboral",
+    "tipo_caso": "Sentencia",
+    "monto": "$ 34.800.000",
+    "titulo": "CNAT Sala VIII declara nula causa de despido inventada y ordena indemnización agravada con multas",
+    "caratula_path": "output\\nl_lab_cnat_sala8_despido.png",
+    "imagen_path": "output\\nl_lab_cnat_sala8_despido.png",
+    "copy_ig": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $ 34.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+    "caption": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $ 34.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+    "copy_tiktok": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía? ⚖️\nMirá este caso real: indemnización de $ 34.800.000 dictada por la justicia.\nConsultá tu indemnización con un abogado laboralista desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+      "hook_3s": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+      "visual_hook": "[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $ 34.800.000]",
+      "desarrollo": "La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.",
+      "indicaciones_visuales": "[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]",
+      "cta": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+      "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.\", \"hook_3s\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.\", \"visual_hook\": \"[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $ 34.800.000]\", \"desarrollo\": \"La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.\", \"indicaciones_visuales\": \"[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\", \"texto_completo\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%24%2034.800.000%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%24%2034.800.000%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
+    "wa_mensaje": "Hola, vi la sentencia de $ 34.800.000 por despido y quiero consultar mi caso y liquidación.",
+    "estado": "deleted",
+    "status": "deleted",
+    "hashtags": [
+      "#DerechoLaboral",
+      "#Despidos",
+      "#Indemnizacion",
+      "#JuicioLaboral",
+      "#AbogadoLaboral"
+    ],
+    "puntos_clave": [
+      "La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.",
+      "Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.",
+      "No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista."
+    ],
+    "noticia": {
+      "id": "nl_lab_cnat_sala8_despido",
+      "fuente": "ninolegal_laboral",
+      "titulo": "CNAT Sala VIII declara nula causa de despido inventada y ordena indemnización agravada con multas",
+      "resumen": "El trabajador fue despedido con una falsa acusación de pérdida de confianza y supuesto incumplimiento tras haber intimado por escrito el pago de horas extras y diferencias salariales acumuladas a lo largo de 3 años de relación laboral continua.",
+      "link": "https://ninolegal.com/dashboard/assistants/legal/laboral-y-previsional/fallo-cnat-sala8-gonzalez-34800",
+      "fecha": "2026-09-27",
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "tribunal": "Cámara Nacional de Apelaciones del Trabajo - Sala VIII",
+      "caratula": "González, Marcelo c/ Logística Rápida S.A. s/ Despido",
+      "monto": "$ 34.800.000"
+    },
+    "analisis": {
+      "relevante": true,
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "puntaje": 9,
+      "monto": "$ 34.800.000",
+      "razon": "La Sala VIII revocó la sentencia de primera instancia, declaró la inexistencia de causal justificada atribuida por la patronal y condenó a la empresa a abonar la indemnización por antigüedad, preaviso omitido y los incrementos punitorios por conducta maliciosa procesal.",
+      "tipo": "Sentencia",
+      "titulo_caratula": "CNAT Sala VIII declara nula causa de despido inventada y ordena indemnización agravada con multas",
+      "gancho": "El trabajador fue despedido con una falsa acusación de pérdida de confianza y supuesto incumplimiento tras haber intimado por escrito el pago de horas extras y diferencias salariales acumuladas a lo largo de 3 años de relación laboral continua.",
+      "puntos_clave": [
+        "La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.",
+        "Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.",
+        "No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista."
+      ],
+      "cta": "Consultá tu indemnización con un abogado laboralista",
+      "caption": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $ 34.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+      "hashtags": [
+        "#DerechoLaboral",
+        "#Despidos",
+        "#Indemnizacion",
+        "#JuicioLaboral",
+        "#AbogadoLaboral"
+      ],
+      "copy_instagram": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $ 34.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+      "copy_tiktok": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía? ⚖️\nMirá este caso real: indemnización de $ 34.800.000 dictada por la justicia.\nConsultá tu indemnización con un abogado laboralista desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+        "hook_3s": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+        "visual_hook": "[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $ 34.800.000]",
+        "desarrollo": "La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.",
+        "indicaciones_visuales": "[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]",
+        "cta": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+        "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%24%2034.800.000%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
+      "wa_mensaje": "Hola, vi la sentencia de $ 34.800.000 por despido y quiero consultar mi caso y liquidación."
+    }
+  },
+  {
+    "id": "2f088fed9c843a1f543c1ca79c03f02a",
+    "noticia_id": "2f088fed9c843a1f543c1ca79c03f02a",
+    "vertical": "laboral",
+    "nicho": "laboral",
+    "tipo_caso": "Sentencia Laboral",
+    "monto": "$30 millones",
+    "titulo": "Jugaba al handbol en la escuela, sufrió una grave lesión en la rodilla y será indemnizada con $30 millones",
+    "caratula_path": "output\\2f088fed9c843a1f543c1ca79c03f02a.png",
+    "imagen_path": "output\\2f088fed9c843a1f543c1ca79c03f02a.png",
+    "copy_ig": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $30 millones a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+    "caption": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $30 millones a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+    "copy_tiktok": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía? ⚖️\nMirá este caso real: indemnización de $30 millones dictada por la justicia.\nConsultá tu indemnización con un abogado laboralista desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+      "hook_3s": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+      "visual_hook": "[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $30 MILLONES]",
+      "desarrollo": "La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $30 millones a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.",
+      "indicaciones_visuales": "[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]",
+      "cta": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+      "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $30 millones a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.\", \"hook_3s\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.\", \"visual_hook\": \"[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $30 MILLONES]\", \"desarrollo\": \"La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $30 millones a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.\", \"indicaciones_visuales\": \"[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\", \"texto_completo\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $30 millones a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%2430%20millones%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%2430%20millones%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
+    "wa_mensaje": "Hola, vi la sentencia de $30 millones por despido y quiero consultar mi caso y liquidación.",
+    "estado": "active",
+    "status": "active",
+    "hashtags": [
+      "#DerechoLaboral",
+      "#Despidos",
+      "#Indemnizacion",
+      "#JuicioLaboral",
+      "#AbogadoLaboral"
+    ],
+    "puntos_clave": [
+      "La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.",
+      "Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.",
+      "No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista."
+    ],
+    "noticia": {
+      "id": "2f088fed9c843a1f543c1ca79c03f02a",
+      "fuente": "Infobae Judiciales",
+      "titulo": "Jugaba al handbol en la escuela, sufrió una grave lesión en la rodilla y será indemnizada con $30 millones",
+      "resumen": "La estudiante sufrió la rotura de ligamentos y meniscos tras la caída de una compañera sobre su pierna durante una clase de gimnasia. Un juzgado civil de Morón homologó un acuerdo transaccional tras la intervención quirúrgica y el proceso de rehabilitación de la joven",
+      "link": "https://www.infobae.com/judiciales/2026/09/24/jugaba-al-handbol-en-la-escuela-sufrio-una-grave-lesion-en-la-rodilla-y-sera-indemnizada-con-30-millones/",
+      "fecha": "Thu, 24 Sep 2026 04:59:17 +0000",
+      "procesada": 0,
+      "fecha_iso": "2026-09-24",
+      "fecha_timestamp": 1790225957,
+      "nicho": "laboral",
+      "sub_categoria": null,
+      "monto_economico": "$30 millones",
+      "tribunal": null,
+      "caratula": null,
+      "situacion_hecho": null,
+      "decision_judicial": null
+    },
+    "analisis": {
+      "relevante": true,
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "puntaje": 8,
+      "monto": "$30 millones",
+      "razon": "Fallo judicial laboral: Jugaba al handbol en la escuela, sufrió una grave lesión en la rodilla y será indemnizada con $30 millones.",
+      "tipo": "Sentencia Laboral",
+      "titulo_caratula": "Jugaba al handbol en la escuela, sufrió una grave lesión en la rodilla y será indemnizada con $30 millones",
+      "gancho": "Trabajador desvinculado o damnificado reclamando liquidación e indemnización conforme a la ley.",
+      "puntos_clave": [
+        "La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.",
+        "Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.",
+        "No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista."
+      ],
+      "cta": "Consultá tu indemnización con un abogado laboralista",
+      "caption": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $30 millones a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+      "hashtags": [
+        "#DerechoLaboral",
+        "#Despidos",
+        "#Indemnizacion",
+        "#JuicioLaboral",
+        "#AbogadoLaboral"
+      ],
+      "copy_instagram": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $30 millones a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+      "copy_tiktok": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía? ⚖️\nMirá este caso real: indemnización de $30 millones dictada por la justicia.\nConsultá tu indemnización con un abogado laboralista desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+        "hook_3s": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+        "visual_hook": "[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $30 MILLONES]",
+        "desarrollo": "La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $30 millones a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.",
+        "indicaciones_visuales": "[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]",
+        "cta": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+        "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $30 millones a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%2430%20millones%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
+      "wa_mensaje": "Hola, vi la sentencia de $30 millones por despido y quiero consultar mi caso y liquidación."
+    }
+  }
+]

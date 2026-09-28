@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Bot — Publicaciones</title>
+    <style>
+        :root {
+            --bg: #0a0a0c;
+            --surface: #141417;
+            --border: #27272a;
+            --accent: #facc15;
+            --text: #f4f4f5;
+            --muted: #a1a1aa;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        body { background: var(--bg); color: var(--text); padding: 40px 20px; min-height: 100vh; }
+        .container { max-width: 1050px; margin: 0 auto; }
+        header { margin-bottom: 36px; border-bottom: 1px solid var(--border); padding-bottom: 24px; display: flex; justify-content: space-between; align-items: center; }
+        h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.5px; }
+        .stats { background: var(--surface); padding: 6px 14px; border-radius: 9999px; font-size: 13px; border: 1px solid var(--border); color: var(--muted); }
+        .grid { display: flex; flex-direction: column; gap: 28px; }
+        .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; display: grid; grid-template-columns: 320px 1fr; gap: 24px; padding: 24px; }
+        @media (max-width: 800px) { .card { grid-template-columns: 1fr; } }
+        .card-visual { display: flex; flex-direction: column; gap: 12px; }
+        .caratula-img { width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); }
+        .btn-download { display: block; text-align: center; background: #1f1f23; color: var(--text); padding: 8px; border-radius: 6px; text-decoration: none; font-size: 12px; font-weight: 500; border: 1px solid var(--border); }
+        .btn-download:hover { background: #27272a; }
+        .card-content { display: flex; flex-direction: column; gap: 14px; }
+        .card-header { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+        .badge { background: #27272a; color: var(--text); padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 500; }
+        .monto-badge { background: rgba(250, 204, 21, 0.15); color: var(--accent); padding: 3px 8px; border-radius: 4px; font-size: 12px; font-weight: 700; border: 1px solid rgba(250, 204, 21, 0.3); }
+        .source-tag { color: var(--muted); font-size: 12px; }
+        .card-title a { color: var(--text); text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.4; }
+        .card-title a:hover { color: var(--accent); }
+        .card-reason { font-size: 14px; color: var(--muted); line-height: 1.5; }
+        .key-points { background: #0a0a0c; padding: 12px 16px; border-radius: 6px; font-size: 13px; border: 1px solid var(--border); }
+        .key-points ul { margin-left: 20px; margin-top: 6px; }
+        .caption-box { background: #0a0a0c; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+        .caption-header { background: #18181b; padding: 8px 12px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; font-weight: 500; color: var(--muted); }
+        .copy-btn { background: var(--text); color: #000; border: none; padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; }
+        .copy-btn:hover { background: #fff; }
+        .caption-text { padding: 12px; white-space: pre-wrap; font-size: 13px; color: #e4e4e7; max-height: 170px; overflow-y: auto; line-height: 1.5; }
+        #toast { position: fixed; bottom: 24px; right: 24px; background: #22c55e; color: #000; padding: 10px 18px; border-radius: 6px; font-weight: 600; font-size: 13px; display: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚖️ Legal Bot — Publicaciones</h1>
+            <div class="stats">1 listas</div>
+        </header>
+        <div class="grid">
+            
+        <article class="card">
+            <div class="card-visual">
+                <img src="2f088fed9c843a1f543c1ca79c03f02a.png" alt="Carátula" class="caratula-img">
+                <a href="2f088fed9c843a1f543c1ca79c03f02a.png" download class="btn-download">Descargar carátula</a>
+            </div>
+            <div class="card-content">
+                <div class="card-header">
+                    <span class="badge">⚖️ Sentencia</span>
+                    <span class="monto-badge">$30 millones</span>
+                    <span class="source-tag">Infobae Judiciales</span>
+                </div>
+                
+                <h2 class="card-title">
+                    <a href="https://www.infobae.com/judiciales/2026/09/24/jugaba-al-handbol-en-la-escuela-sufrio-una-grave-lesion-en-la-rodilla-y-sera-indemnizada-con-30-millones/" target="_blank" rel="noopener">Jugaba al handbol en la escuela, sufrió una grave lesión en la rodilla y será indemnizada con $30 millones</a>
+                </h2>
+                
+                <p class="card-reason"><strong>Resumen:</strong> Fallo judicial laboral: Jugaba al handbol en la escuela, sufrió una grave lesión en la rodilla y será indemnizada con $30 millones.</p>
+
+                <div class="key-points">
+                    <strong>Puntos clave:</strong>
+                    <ul><li>La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.</li><li>Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.</li><li>No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.</li></ul>
+                </div>
+
+                <div class="caption-box">
+                    <div class="caption-header">
+                        <span>Copy Redes</span>
+                        <button class="copy-btn" onclick="copiarTexto(this)">Copiar</button>
+                    </div>
+                    <pre class="caption-text">¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?
+
+Mirá este caso real donde la justicia condenó a pagar de $30 millones a un trabajador en tu misma situación.
+
+📌 Puntos clave que tenés que saber:
+• La Cámara del Trabajo sentenció el pago de una liquidación completa de $30 millones.
+• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.
+• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.
+
+📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.
+
+#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral
+
+#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral</pre>
+                </div>
+            </div>
+        </article>
+        
+        </div>
+    </div>
+    <div id="toast">✅ ¡Copiado al portapapeles!</div>
+    <script>
+        function copiarTexto(btn) {
+            const pre = btn.closest('.caption-box').querySelector('pre');
+            navigator.clipboard.writeText(pre.innerText).then(() => {
+                const toast = document.getElementById('toast');
+                toast.style.display = 'block';
+                setTimeout(() => { toast.style.display = 'none'; }, 2500);
+            });
+        }
+    </script>
+</body>
+</html>
