@@ -24,6 +24,7 @@ import tempfile
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timezone, timedelta
 
 # Reconfigurar salida para UTF-8 en Windows
 if sys.stdout and hasattr(sys.stdout, "reconfigure"):
@@ -107,6 +108,7 @@ def init_publicaciones_table(db_path=None):
                 status TEXT NOT NULL DEFAULT 'active',
                 hashtags TEXT,
                 puntos_clave TEXT,
+                fb_post_id TEXT,
                 created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
                 updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
             )
@@ -137,7 +139,17 @@ def init_publicaciones_table(db_path=None):
             ("caratulas_json", "TEXT"),
             ("estilo", "TEXT DEFAULT 'infobae'"),
             ("created_at", "DATETIME DEFAULT CURRENT_TIMESTAMP"),
-            ("updated_at", "DATETIME DEFAULT CURRENT_TIMESTAMP")
+            ("updated_at", "DATETIME DEFAULT CURRENT_TIMESTAMP"),
+            ("scheduled_at",    "DATETIME"),
+            ("published_at",    "DATETIME"),
+            ("redes_publicar",  "TEXT DEFAULT '[\"instagram\", \"tiktok\", \"facebook\"]'"),
+            ("redes_publicadas","TEXT DEFAULT '[]'"),
+            ("pub_status",      "TEXT DEFAULT 'draft'"),
+            ("ig_media_id",     "TEXT"),
+            ("tiktok_video_id", "TEXT"),
+            ("fb_post_id",      "TEXT"),
+            ("notas",           "TEXT"),
+            ("monto_numerico",  "REAL"),
         ]
         for col_name, col_def in needed_cols:
             if col_name not in existing_cols:
@@ -151,6 +163,10 @@ def init_publicaciones_table(db_path=None):
             cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_estado ON publicaciones (estado)")
             cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_vertical ON publicaciones (vertical)")
             cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_created ON publicaciones (created_at DESC)")
+            cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_pub_status ON publicaciones (pub_status)")
+            cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_scheduled ON publicaciones (scheduled_at)")
+            cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_noticia_id ON publicaciones (noticia_id)")
+            cur.execute("CREATE INDEX IF NOT EXISTS idx_publicaciones_fb_post_id ON publicaciones (fb_post_id)")
         except Exception:
             pass
 
@@ -196,21 +212,161 @@ def _guardar_post_sqlite(post_dict: dict):
     caratulas_json = json.dumps(cj, ensure_ascii=False) if isinstance(cj, dict) else str(cj or "{}")
     estilo = str(post_dict.get("estilo") or "infobae")
 
+    pub_status = str(post_dict.get("pub_status") or "draft")
+    scheduled_at = post_dict.get("scheduled_at") or None
+    published_at = post_dict.get("published_at") or None
+    redes_publicar = json.dumps(post_dict.get("redes_publicar") or ["instagram", "tiktok", "facebook"], ensure_ascii=False)
+    redes_publicadas = json.dumps(post_dict.get("redes_publicadas") or [], ensure_ascii=False)
+    fb_post_id = post_dict.get("fb_post_id") or None
+    ig_media_id = post_dict.get("ig_media_id") or None
+    tiktok_video_id = post_dict.get("tiktok_video_id") or None
+    notas = str(post_dict.get("notas") or "")
+
     cur.execute("""
         INSERT OR REPLACE INTO publicaciones (
             id, noticia_id, vertical, nicho, tipo_caso, monto, titulo,
             caratula_path, imagen_path, copy_ig, caption, copy_tiktok,
             guion_video, guion_video_json, whatsapp_link, wa_link, wa_mensaje,
-            estado, status, hashtags, puntos_clave, caratulas_json, estilo, updated_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
+            estado, status, hashtags, puntos_clave, caratulas_json, estilo,
+            pub_status, scheduled_at, published_at, redes_publicar, redes_publicadas,
+            fb_post_id, ig_media_id, tiktok_video_id, notas, updated_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP)
     """, (
         pid, nid, vertical, vertical, tipo, monto, titulo,
         caratula, caratula, caption, caption, copy_tt,
         guion_str, guion_str, wa_link, wa_link, wa_msg,
-        status, status, hashtags, puntos, caratulas_json, estilo
+        status, status, hashtags, puntos, caratulas_json, estilo,
+        pub_status, scheduled_at, published_at, redes_publicar, redes_publicadas,
+        fb_post_id, ig_media_id, tiktok_video_id, notas
     ))
     conn.commit()
     conn.close()
+
+
+def calcular_proximo_slot(db_path=None, base_dt=None, slots_per_day=(10, 14, 18), max_days_ahead=30, occupied_slots=None) -> str:
+    """
+    Calcula el próximo horario libre en el calendario editorial para auto-programación.
+    - Franjas horarias estándar: 10:00, 14:00 y 18:00 UTC.
+    - Inicia a partir de mañana (datetime.now(timezone.utc).date() + 1 día).
+    - Consulta SQLite 'publicaciones' para slots ya reservados (pub_status = 'scheduled').
+    - Utiliza 'occupied_slots' para reservar slots concurrentes durante generación en lote.
+    - Retorna timestamp UTC formateado: 'YYYY-MM-DD HH:MM:SS'.
+    """
+    if occupied_slots is None:
+        occupied_slots = set()
+
+    if not base_dt:
+        base_dt = datetime.now(timezone.utc)
+
+    start_date = base_dt.date() + timedelta(days=1)
+    end_date = start_date + timedelta(days=max_days_ahead)
+
+    conn = sqlite3.connect(db_path or get_db_path())
+    cur = conn.cursor()
+    try:
+        cur.execute("""
+            SELECT scheduled_at FROM publicaciones
+            WHERE pub_status = 'scheduled'
+              AND scheduled_at >= ?
+              AND scheduled_at <= ?
+        """, (f"{start_date} 00:00:00", f"{end_date} 23:59:59"))
+        db_occupied = {row[0] for row in cur.fetchall() if row[0]}
+    except Exception:
+        db_occupied = set()
+    finally:
+        conn.close()
+
+    all_occupied = db_occupied | occupied_slots
+
+    for day_offset in range(max_days_ahead):
+        cur_date = start_date + timedelta(days=day_offset)
+        for hour in slots_per_day:
+            candidate = f"{cur_date.strftime('%Y-%m-%d')} {hour:02d}:00:00"
+            if candidate not in all_occupied:
+                occupied_slots.add(candidate)
+                return candidate
+
+    fallback_date = start_date + timedelta(days=max_days_ahead + 1)
+    fallback = f"{fallback_date.strftime('%Y-%m-%d')} 10:00:00"
+    occupied_slots.add(fallback)
+    return fallback
+
+
+def _enrich_cases_with_traceability(cases: list, db_path: str = None) -> list:
+    """Enriquece los casos detectados con trazabilidad: ya_generada, post_id, pub_status, caratula_thumb y calificacion."""
+    if not cases:
+        return []
+
+    cand_ids = []
+    for c in cases:
+        if isinstance(c, dict):
+            noticia_obj = c.get("noticia")
+            if isinstance(noticia_obj, dict):
+                nid = noticia_obj.get("id")
+                if nid:
+                    cand_ids.append(str(nid))
+
+    pub_map = {}
+    if cand_ids:
+        try:
+            conn = sqlite3.connect(db_path or get_db_path())
+            conn.row_factory = sqlite3.Row
+            cur = conn.cursor()
+            placeholders = ",".join(["?"] * len(cand_ids))
+            sql = f"""
+                SELECT id, noticia_id, pub_status, caratula_path, caratulas_json, created_at
+                FROM publicaciones
+                WHERE noticia_id IN ({placeholders}) OR id IN ({placeholders})
+                ORDER BY created_at DESC
+            """
+            cur.execute(sql, cand_ids + cand_ids)
+            rows = cur.fetchall()
+            conn.close()
+
+            for r in rows:
+                nid = str(r["noticia_id"] or r["id"])
+                if nid not in pub_map:
+                    pub_map[nid] = r
+                if str(r["id"]) not in pub_map:
+                    pub_map[str(r["id"])] = r
+        except Exception as e:
+            print(f"Warning in _enrich_cases_with_traceability: {e}")
+
+    for c in cases:
+        if not isinstance(c, dict):
+            continue
+        noticia_obj = c.get("noticia") if isinstance(c.get("noticia"), dict) else {}
+        nid = str(noticia_obj.get("id") or "")
+        pub = pub_map.get(nid)
+
+        # Dual-key alias: keep existing 'filtro', add 'calificacion'
+        if "calificacion" not in c and "filtro" in c:
+            c["calificacion"] = c["filtro"]
+        elif "filtro" not in c and "calificacion" in c:
+            c["filtro"] = c["calificacion"]
+
+        if pub:
+            c["ya_generada"] = True
+            c["post_id"] = str(pub["id"])
+            c["pub_status"] = pub["pub_status"] or "draft"
+
+            thumb = pub["caratula_path"]
+            cj_raw = pub["caratulas_json"]
+            if cj_raw:
+                try:
+                    cj = json.loads(cj_raw) if isinstance(cj_raw, str) else cj_raw
+                    thumb = cj.get("1:1") or cj.get("4:5") or thumb
+                except Exception:
+                    pass
+            c["caratula_thumb"] = thumb
+        else:
+            is_proc = bool(noticia_obj.get("procesada", 0))
+            c["ya_generada"] = is_proc
+            c["post_id"] = None
+            c["pub_status"] = "processed" if is_proc else None
+            c["caratula_thumb"] = None
+
+    return cases
 
 
 def _guardar_historial(pubs):
@@ -534,6 +690,12 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
                     "puntos_clave": pc_parsed,
                     "created_at": str(d.get("created_at") or ""),
                     "updated_at": str(d.get("updated_at") or ""),
+                    "scheduled_at":    str(d.get("scheduled_at") or ""),
+                    "published_at":    str(d.get("published_at") or ""),
+                    "pub_status":      str(d.get("pub_status") or "draft"),
+                    "redes_publicar":  json.loads(d.get("redes_publicar") or "[]") if isinstance(d.get("redes_publicar") or "[]", str) and (d.get("redes_publicar") or "[]").startswith("[") else [],
+                    "redes_publicadas":json.loads(d.get("redes_publicadas") or "[]") if isinstance(d.get("redes_publicadas") or "[]", str) and (d.get("redes_publicadas") or "[]").startswith("[") else [],
+                    "notas":           str(d.get("notas") or ""),
                     # Compatibilidad con formatos anidados
                     "noticia": {
                         "id": d.get("noticia_id") or d["id"],
@@ -566,6 +728,22 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
         elif path == "/api/history":
             hist = _leer_historial()
             self._send_json({"publicaciones": hist})
+            return
+
+        # Calendario editorial: posts por semana
+        elif path == "/api/calendar":
+            query_params = parse_qs(parsed.query)
+            self._handle_calendar(query_params)
+            return
+
+        # Métricas de publicación
+        elif path == "/api/stats":
+            self._handle_stats()
+            return
+
+        # Estado de APIs de publicación
+        elif path == "/api/publisher/status":
+            self._handle_publisher_status()
             return
 
         super().do_GET()
@@ -716,7 +894,14 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
 
                 duracion = round(time.time() - t0, 1)
                 print(f"   ✨ Escaneo finalizado en {duracion}s. {len(candidatos)} casos encontrados.\n")
-                self._send_json({"casos": candidatos, "duracion": duracion, "total": len(candidatos)})
+                candidatos = _enrich_cases_with_traceability(candidatos)
+                self._send_json({
+                    "status": "ok",
+                    "casos": candidatos,
+                    "duracion": duracion,
+                    "total": len(candidatos),
+                    "nuevas": nuevas
+                })
             except Exception as e:
                 print(f"   ❌ Error en escaneo: {e}")
                 self._send_json({"error": str(e)}, status=500)
@@ -827,7 +1012,8 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
             ]
             for m in muestras:
                 CASOS_CACHE[m["noticia"]["id"]] = m
-            self._send_json({"casos": muestras})
+            muestras = _enrich_cases_with_traceability(muestras)
+            self._send_json({"status": "ok", "casos": muestras, "total": len(muestras)})
 
         # 3. Generador 1-Clic Multi-Asset (Carátula, Copy, Guion, WhatsApp)
         elif path == "/api/generate":
@@ -845,10 +1031,21 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
                 self._send_json({"error": "Missing required field 'ids' or 'noticia_id'"}, status=400)
                 return
 
+            auto_sched = (data.get("auto_schedule") is True) or str(data.get("auto_schedule", "")).lower() in ("true", "1", "yes")
+            target_redes = data.get("redes")
+            if not target_redes or not isinstance(target_redes, list):
+                target_redes = ["instagram", "tiktok", "facebook"]
+            occupied_slots = set()
+
             casos_payload = data.get("casos", [])
-            for c in casos_payload:
-                if isinstance(c, dict) and "noticia" in c and "id" in c["noticia"]:
-                    CASOS_CACHE[c["noticia"]["id"]] = c
+            if isinstance(casos_payload, list):
+                for c in casos_payload:
+                    if isinstance(c, dict):
+                        noticia_obj = c.get("noticia")
+                        if isinstance(noticia_obj, dict) and "id" in noticia_obj:
+                            CASOS_CACHE[str(noticia_obj["id"])] = c
+                    elif isinstance(c, str):
+                        pass
 
             print(f"\n✍️  [Generar] Procesando {len(ids)} noticia(s) seleccionada(s)...")
             publicaciones = []
@@ -932,6 +1129,15 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
                             except Exception:
                                 pass
 
+                        if auto_sched:
+                            post_pub_status = "scheduled"
+                            post_scheduled_at = data.get("scheduled_at") or calcular_proximo_slot(occupied_slots=occupied_slots)
+                            post_notas = str(data.get("notas") or "Programación automática (1-Clic)")
+                        else:
+                            post_pub_status = "draft"
+                            post_scheduled_at = None
+                            post_notas = str(data.get("notas") or "")
+
                         post_record = {
                             "id": n["id"],
                             "noticia_id": n["id"],
@@ -957,6 +1163,10 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
                             "status": "active",
                             "hashtags": contenido.get("hashtags", []),
                             "puntos_clave": contenido.get("puntos_clave", []),
+                            "pub_status": post_pub_status,
+                            "scheduled_at": post_scheduled_at,
+                            "redes_publicar": target_redes,
+                            "notas": post_notas,
                             # Compatibilidad de estructura
                             "noticia": n,
                             "analisis": contenido
@@ -977,10 +1187,15 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
 
             print(f"   🎉 {len(publicaciones)} publicación(es) lista(s).\n")
             res_data = {
-                "publicaciones": publicaciones,
-                "success": True
+                "status": "ok",
+                "success": True,
+                "total": len(publicaciones),
+                "publicaciones": publicaciones
             }
-            if len(publicaciones) == 1:
+            if publicaciones:
+                res_data["post_id"] = publicaciones[0]["id"]
+                res_data["pub_status"] = publicaciones[0].get("pub_status", "draft")
+                res_data["scheduled_at"] = publicaciones[0].get("scheduled_at")
                 res_data["post"] = publicaciones[0]
             self._send_json(res_data)
 
@@ -1058,8 +1273,322 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
 
             self._send_json({"success": True, "id": post_id})
 
+        # 6. Programar Publicación en Redes
+        elif path == "/api/posts/schedule":
+            data, ok = self._parse_json_body()
+            if not ok:
+                self._send_json({"error": "Malformed JSON payload"}, status=400)
+                return
+            post_id = data.get("id")
+            scheduled_at = data.get("scheduled_at")  # ISO8601 string
+            redes = data.get("redes") or ["instagram", "tiktok", "facebook"]
+            notas = data.get("notas") or ""
+            if not post_id:
+                self._send_json({"error": "Falta el ID de la publicación"}, status=400)
+                return
+            init_publicaciones_table()
+            conn = sqlite3.connect(get_db_path())
+            cur = conn.cursor()
+            if scheduled_at:
+                # Convertir a UTC para comparación en scheduler
+                try:
+                    dt_local = datetime.fromisoformat(scheduled_at.replace("Z", "+00:00"))
+                    scheduled_utc = dt_local.strftime("%Y-%m-%d %H:%M:%S")
+                except Exception:
+                    scheduled_utc = scheduled_at
+                cur.execute("""
+                    UPDATE publicaciones
+                    SET pub_status = 'scheduled',
+                        scheduled_at = ?,
+                        redes_publicar = ?,
+                        notas = ?,
+                        updated_at = CURRENT_TIMESTAMP
+                    WHERE id = ?
+                """, (scheduled_utc, json.dumps(redes, ensure_ascii=False), notas, post_id))
+            else:
+                # Solo actualizar redes y notas sin programar
+                cur.execute("""
+                    UPDATE publicaciones
+                    SET redes_publicar = ?,
+                        notas = ?,
+                        updated_at = CURRENT_TIMESTAMP
+                    WHERE id = ?
+                """, (json.dumps(redes, ensure_ascii=False), notas, post_id))
+            conn.commit()
+            conn.close()
+            self._send_json({"status": "ok", "success": True, "id": post_id, "pub_status": "scheduled" if scheduled_at else "draft", "scheduled_at": scheduled_at, "redes": redes})
+
+        # 7. Publicar Ahora (trigger inmediato)
+        elif path == "/api/posts/publish":
+            data, ok = self._parse_json_body()
+            if not ok:
+                self._send_json({"error": "Malformed JSON payload"}, status=400)
+                return
+            post_id = data.get("id")
+            redes = data.get("redes") or []
+            if not post_id:
+                self._send_json({"error": "Falta el ID de la publicación"}, status=400)
+                return
+            init_publicaciones_table()
+            conn = sqlite3.connect(get_db_path())
+            conn.row_factory = sqlite3.Row
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM publicaciones WHERE id = ?", (post_id,))
+            row = cur.fetchone()
+            conn.close()
+            if not row:
+                self._send_json({"error": "Publicación no encontrada"}, status=404)
+                return
+            post = dict(row)
+            try:
+                cj = post.get("caratulas_json") or "{}"
+                post["caratulas"] = json.loads(cj) if isinstance(cj, str) else cj
+            except Exception:
+                post["caratulas"] = {}
+            if not redes:
+                redes_raw = post.get("redes_publicar") or "[]"
+                try:
+                    redes = json.loads(redes_raw) if isinstance(redes_raw, str) else redes_raw
+                except Exception:
+                    redes = []
+            if not redes:
+                redes = ["instagram", "tiktok", "facebook"]
+            try:
+                from publisher import publicar_en_redes
+                resultados = publicar_en_redes(post, redes)
+                redes_ok = [r for r, v in resultados.items() if v.get("status") in ("published", "semi_auto")]
+                redes_err = [r for r, v in resultados.items() if v.get("status") == "error"]
+                nuevo_pub_status = "published" if not redes_err else ("partial" if redes_ok else "failed")
+                published_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+
+                fb_id = resultados.get("facebook", {}).get("fb_post_id")
+                ig_id = resultados.get("instagram", {}).get("ig_media_id") or resultados.get("instagram", {}).get("container_id")
+                tt_id = resultados.get("tiktok", {}).get("publish_id")
+
+                update_fields = [
+                    "pub_status = ?",
+                    "redes_publicadas = ?",
+                    "redes_publicar = ?",
+                    "published_at = ?",
+                    "updated_at = CURRENT_TIMESTAMP"
+                ]
+                params = [
+                    nuevo_pub_status,
+                    json.dumps(redes_ok, ensure_ascii=False),
+                    json.dumps(redes, ensure_ascii=False),
+                    published_at
+                ]
+                if fb_id:
+                    update_fields.append("fb_post_id = ?")
+                    params.append(fb_id)
+                if ig_id:
+                    update_fields.append("ig_media_id = ?")
+                    params.append(ig_id)
+                if tt_id:
+                    update_fields.append("tiktok_video_id = ?")
+                    params.append(tt_id)
+                params.append(post_id)
+
+                conn2 = sqlite3.connect(get_db_path())
+                cur2 = conn2.cursor()
+                cur2.execute(f"""
+                    UPDATE publicaciones
+                    SET {', '.join(update_fields)}
+                    WHERE id = ?
+                """, params)
+                conn2.commit()
+                conn2.close()
+                self._send_json({"status": "ok", "success": True, "id": post_id, "pub_status": nuevo_pub_status, "resultados": resultados})
+            except ImportError:
+                self._send_json({"error": "publisher.py no encontrado"}, status=500)
+
+        # 8. Calendario editorial: posts por semana
+        elif path == "/api/calendar":
+            query_params = parse_qs(parsed.query)
+            self._handle_calendar(query_params)
+
+        # 9. Métricas de publicación
+        elif path == "/api/stats":
+            self._handle_stats()
+
+        # 10. Reciclar post (generar variante)
+        elif path == "/api/posts/recycle":
+            data, ok = self._parse_json_body()
+            if not ok:
+                self._send_json({"error": "Malformed JSON payload"}, status=400)
+                return
+            post_id = data.get("id")
+            if not post_id:
+                self._send_json({"error": "Falta el ID"}, status=400)
+                return
+            init_publicaciones_table()
+            conn = sqlite3.connect(get_db_path())
+            conn.row_factory = sqlite3.Row
+            cur = conn.cursor()
+            cur.execute("SELECT * FROM publicaciones WHERE id = ?", (post_id,))
+            row = cur.fetchone()
+            conn.close()
+            if not row:
+                self._send_json({"error": "Post no encontrado"}, status=404)
+                return
+            post = dict(row)
+            noticia_fake = {
+                "id": post["id"],
+                "titulo": post.get("titulo") or "",
+                "resumen": post.get("wa_mensaje") or "",
+                "fuente": post.get("tipo_caso") or "Tribunal",
+                "fecha": (post.get("created_at") or "")[:10],
+                "nicho": post.get("vertical") or post.get("nicho") or "laboral",
+                "vertical": post.get("vertical") or "laboral",
+                "monto": post.get("monto") or ""
+            }
+            filtro_fake = {
+                "es_caso_relevante": True,
+                "vertical": noticia_fake["nicho"],
+                "tipo": post.get("tipo_caso") or "Sentencia",
+                "monto": post.get("monto") or "",
+                "variante": True
+            }
+            try:
+                nuevo_contenido = redactar_post_legal(noticia_fake, filtro_fake)
+                if nuevo_contenido:
+                    self._send_json({"success": True, "contenido": nuevo_contenido})
+                else:
+                    self._send_json({"error": "No se pudo generar variante"}, status=500)
+            except Exception as e:
+                self._send_json({"error": str(e)}, status=500)
+
+        # 11. Estado de APIs de publicación
+        elif path == "/api/publisher/status":
+            self._handle_publisher_status()
+
         else:
             self.send_error(404, "Endpoint no encontrado")
+
+    def _handle_calendar(self, query_params):
+        week_str = query_params.get("week", [None])[0]
+        if week_str:
+            try:
+                year, week_num = week_str.split("-W")
+                monday = datetime.strptime(f"{year}-W{week_num}-1", "%Y-W%W-%w")
+            except Exception:
+                monday = datetime.now()
+                monday = monday - timedelta(days=monday.weekday())
+        else:
+            today = datetime.now()
+            monday = today - timedelta(days=today.weekday())
+        sunday = monday + timedelta(days=6, hours=23, minutes=59, seconds=59)
+        week_label = monday.strftime("%Y-W%W")
+
+        init_publicaciones_table()
+        conn = sqlite3.connect(get_db_path())
+        conn.row_factory = sqlite3.Row
+        cur = conn.cursor()
+        cur.execute("""
+            SELECT id, titulo, vertical, nicho, monto, pub_status,
+                   scheduled_at, published_at, redes_publicar, redes_publicadas,
+                   caratula_path, imagen_path, caratulas_json, notas, created_at
+            FROM publicaciones
+            WHERE status != 'deleted' AND estado != 'deleted'
+              AND (
+                (scheduled_at >= ? AND scheduled_at <= ?)
+                OR (scheduled_at IS NULL AND created_at >= ? AND created_at <= ?)
+              )
+            ORDER BY COALESCE(scheduled_at, created_at) ASC
+        """, (
+            monday.strftime("%Y-%m-%d 00:00:00"),
+            sunday.strftime("%Y-%m-%d 23:59:59"),
+            monday.strftime("%Y-%m-%d 00:00:00"),
+            sunday.strftime("%Y-%m-%d 23:59:59")
+        ))
+        rows = cur.fetchall()
+        conn.close()
+
+        posts_cal = []
+        for r in rows:
+            d = dict(r)
+            rp = d.get("redes_publicar") or "[]"
+            try:
+                rp_parsed = json.loads(rp) if isinstance(rp, str) else rp
+            except Exception:
+                rp_parsed = []
+            posts_cal.append({
+                "id": d["id"],
+                "titulo": d.get("titulo") or "",
+                "vertical": d.get("vertical") or d.get("nicho") or "laboral",
+                "monto": d.get("monto") or "",
+                "pub_status": d.get("pub_status") or "draft",
+                "scheduled_at": str(d.get("scheduled_at") or ""),
+                "published_at": str(d.get("published_at") or ""),
+                "redes_publicar": rp_parsed,
+                "imagen_path": d.get("caratula_path") or d.get("imagen_path") or "",
+                "notas": d.get("notas") or "",
+                "created_at": str(d.get("created_at") or "")
+            })
+
+        self._send_json({
+            "week": week_label,
+            "monday": monday.strftime("%Y-%m-%d"),
+            "sunday": sunday.strftime("%Y-%m-%d"),
+            "posts": posts_cal
+        })
+
+    def _handle_stats(self):
+        init_publicaciones_table()
+        conn = sqlite3.connect(get_db_path())
+        cur = conn.cursor()
+
+        stats = {"by_red": {"instagram": 0, "tiktok": 0, "facebook": 0}, "by_week": {}, "total_scheduled": 0, "total_published": 0, "total_draft": 0}
+
+        cur.execute("SELECT pub_status, COUNT(*) FROM publicaciones WHERE status != 'deleted' GROUP BY pub_status")
+        for pub_s, cnt in cur.fetchall():
+            if pub_s in ("published", "partial"):
+                stats["total_published"] += cnt
+            elif pub_s == "scheduled":
+                stats["total_scheduled"] += cnt
+            elif pub_s == "draft":
+                stats["total_draft"] += cnt
+
+        cur.execute("SELECT redes_publicadas FROM publicaciones WHERE pub_status IN ('published', 'partial') AND status != 'deleted'")
+        for (rp_raw,) in cur.fetchall():
+            try:
+                rp = json.loads(rp_raw or "[]")
+                for red in rp:
+                    if red in stats["by_red"]:
+                        stats["by_red"][red] += 1
+            except Exception:
+                pass
+
+        cur.execute("SELECT pub_status, COUNT(*) FROM publicaciones WHERE status != 'deleted' AND scheduled_at >= date('now', '-7 days') GROUP BY pub_status")
+        stats["esta_semana"] = {}
+        for pub_s, cnt in cur.fetchall():
+            stats["esta_semana"][pub_s] = cnt
+
+        # Verificar si existe monto_numerico para el ORDER BY
+        cur.execute("PRAGMA table_info(publicaciones)")
+        cols_info = {row[1] for row in cur.fetchall()}
+        order_col = "monto_numerico" if "monto_numerico" in cols_info else "LENGTH(monto)"
+        cur.execute(f"SELECT titulo, monto FROM publicaciones WHERE status != 'deleted' AND monto != '' ORDER BY {order_col} DESC LIMIT 3")
+        stats["top_posts_monto"] = [{"titulo": t, "monto": m} for t, m in cur.fetchall()]
+
+        cur.execute("SELECT scheduled_at, titulo FROM publicaciones WHERE pub_status = 'scheduled' AND scheduled_at > datetime('now') ORDER BY scheduled_at ASC LIMIT 1")
+        next_row = cur.fetchone()
+        stats["proxima_publicacion"] = {"scheduled_at": next_row[0], "titulo": next_row[1]} if next_row else None
+
+        conn.close()
+        self._send_json(stats)
+
+    def _handle_publisher_status(self):
+        try:
+            from publisher import get_status_configuracion
+            config = get_status_configuracion()
+            self._send_json({"redes": config})
+        except ImportError:
+            self._send_json({"redes": {
+                "instagram": {"modo": "semi_auto", "configurado": False},
+                "tiktok": {"modo": "semi_auto", "configurado": False},
+                "facebook": {"modo": "semi_auto", "configurado": False}
+            }})
 
     def _send_json(self, data, status=200):
         self.send_response(status)
@@ -1071,6 +1600,13 @@ class LegalBotHandler(SimpleHTTPRequestHandler):
 def run_server():
     init_db()
     init_publicaciones_table()
+
+    # Iniciar scheduler de publicación programada
+    try:
+        from scheduler import start_scheduler
+        start_scheduler()
+    except Exception as e:
+        print(f"Warning: No se pudo iniciar scheduler: {e}")
 
     server_address = ("", PORT)
     httpd = HTTPServer(server_address, LegalBotHandler)

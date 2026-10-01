@@ -1,37 +1,108 @@
 [
   {
+    "id": "caso_facturacion_monotributo",
+    "noticia_id": "caso_facturacion_monotributo",
+    "vertical": "laboral",
+    "nicho": "laboral",
+    "tipo_caso": "Sentencia",
+    "monto": "$24.800.000",
+    "titulo": "Condenan a empresa logística a indemnizar a chofer que hacían facturar como monotributista",
+    "caratula_path": "output\\caso_facturacion_monotributo_4x5.png",
+    "imagen_path": "output\\caso_facturacion_monotributo_4x5.png",
+    "caratulas": {
+      "4:5": "output\\caso_facturacion_monotributo_4x5.png",
+      "9:16": "output\\caso_facturacion_monotributo_9x16.png"
+    },
+    "caratulas_json": "{\"4:5\": \"output\\\\caso_facturacion_monotributo_4x5.png\", \"9:16\": \"output\\\\caso_facturacion_monotributo_9x16.png\"}",
+    "estilo": "infobae",
+    "copy_ig": "¿Sabías que podés reclamar indemnización millonaria si te obligaban a facturar como monotributista?\n\nMirá este caso real donde la justicia condenó a pagar de $24.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia reconoció fraude a la Ley de Contrato de Trabajo y ordenó pagar de $24.800.000.\n• Condena a pagar indemnización por despido, preaviso omitido y multas de la Ley 24.013.\n• Tenés derecho a reclamar la totalidad de tus aportes y diferencias salariales acumuladas.\n\n📲 Consultá tu liquidación por WhatsApp gratis tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #MonotributoEncubierto #Indemnizacion #AbogadoLaboral",
+    "caption": "¿Sabías que podés reclamar indemnización millonaria si te obligaban a facturar como monotributista?\n\nMirá este caso real donde la justicia condenó a pagar de $24.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia reconoció fraude a la Ley de Contrato de Trabajo y ordenó pagar de $24.800.000.\n• Condena a pagar indemnización por despido, preaviso omitido y multas de la Ley 24.013.\n• Tenés derecho a reclamar la totalidad de tus aportes y diferencias salariales acumuladas.\n\n📲 Consultá tu liquidación por WhatsApp gratis tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #MonotributoEncubierto #Indemnizacion #AbogadoLaboral",
+    "copy_tiktok": "¿Sabías que podés reclamar indemnización millonaria si te obligaban a facturar como monotributista? ⚖️\nMirá este caso real: indemnización de $24.800.000 dictada por la justicia.\nConsultá tu liquidación por WhatsApp gratis desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #MonotributoEncubierto #Indemnizacion #AbogadoLaboral",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+      "hook_3s": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+      "visual_hook": "[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $24.800.000]",
+      "desarrollo": "La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $24.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.",
+      "indicaciones_visuales": "[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]",
+      "cta": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+      "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $24.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.\", \"hook_3s\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.\", \"visual_hook\": \"[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $24.800.000]\", \"desarrollo\": \"La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $24.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.\", \"indicaciones_visuales\": \"[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\", \"texto_completo\": \"Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $24.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20trabajo%20bajo%20monotributo/en%20negro%20y%20vi%20la%20sentencia%20de%20%2424.800.000%2C%20quiero%20asesorarme%20para%20reclamar%20mi%20indemnizaci%C3%B3n.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20trabajo%20bajo%20monotributo/en%20negro%20y%20vi%20la%20sentencia%20de%20%2424.800.000%2C%20quiero%20asesorarme%20para%20reclamar%20mi%20indemnizaci%C3%B3n.",
+    "wa_mensaje": "Hola, trabajo bajo monotributo/en negro y vi la sentencia de $24.800.000, quiero asesorarme para reclamar mi indemnización.",
+    "estado": "active",
+    "status": "active",
+    "hashtags": [
+      "#DerechoLaboral",
+      "#Despidos",
+      "#MonotributoEncubierto",
+      "#Indemnizacion",
+      "#AbogadoLaboral"
+    ],
+    "puntos_clave": [
+      "La justicia reconoció fraude a la Ley de Contrato de Trabajo y ordenó pagar de $24.800.000.",
+      "Condena a pagar indemnización por despido, preaviso omitido y multas de la Ley 24.013.",
+      "Tenés derecho a reclamar la totalidad de tus aportes y diferencias salariales acumuladas."
+    ],
     "noticia": {
       "id": "caso_facturacion_monotributo",
-      "fuente": "Cámara Nacional del Trabajo",
+      "fuente": "Cámara Nacional del Trabajo - Sala V",
       "titulo": "Condenan a empresa logística a indemnizar a chofer que hacían facturar como monotributista",
       "resumen": "La Sala V determinó que existió relación de dependencia encubierta durante 4 años y ordenó el pago de indemnización y multas.",
       "link": "https://www.pjn.gov.ar",
-      "fecha": "Fallo reciente"
+      "fecha": "2026-09-25",
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "monto": "$24.800.000"
     },
     "analisis": {
       "relevante": true,
+      "nicho": "laboral",
+      "vertical": "laboral",
       "puntaje": 10,
       "monto": "$24.800.000",
       "razon": "La Cámara acreditó fraude a la ley de contrato de trabajo y condenó a abonar antigüedad, preaviso y multas de las leyes 24.013 y 25.323.",
       "tipo": "Sentencia",
-      "titulo_caratula": "CONDENAN A EMPRESA POR FRAUDE LABORAL",
-      "gancho": "¿Te obligan a facturar como monotributista pero tenés horario y jefe? ¡Te están estafando!",
+      "titulo_caratula": "Condenan a empresa logística a indemnizar a chofer que hacían facturar como monotributista",
+      "gancho": "Lo obligaban a facturar como monotributista pero cumplía horario y recibía órdenes directas.",
       "puntos_clave": [
-        "La empresa logística obligaba al chofer a facturar sus servicios para evitar registrarlo como empleado.",
-        "La Justicia confirmó que existía una relación laboral real porque cumplía horario y recibía órdenes directas.",
-        "El trabajador tiene derecho a cobrar antigüedad, preaviso y todas las multas por trabajo no registrado."
+        "La justicia reconoció fraude a la Ley de Contrato de Trabajo y ordenó pagar de $24.800.000.",
+        "Condena a pagar indemnización por despido, preaviso omitido y multas de la Ley 24.013.",
+        "Tenés derecho a reclamar la totalidad de tus aportes y diferencias salariales acumuladas."
       ],
-      "cta": "Consultá tu caso por privado ahora.",
-      "caption": "¡Atención! ⚠️ Si sos chofer o trabajás bajo la modalidad de monotributo pero tenés que cumplir horarios, pedir permiso para faltar y recibir órdenes, esto te interesa.\n\nLa Justicia acaba de condenar a una empresa logística a pagar $24.800.000 por tener a un trabajador en fraude laboral. 🚛💨\n\n¿Qué significa esto? Que no importa si firmaste un contrato de locación de servicios o si emitís facturas: si hay subordinación, hay relación de dependencia. Y si hay relación de dependencia, ¡te corresponden todos los beneficios de la Ley de Contrato de Trabajo!\n\nNo dejes que se aprovechen de tu necesidad. Si estás en esta situación, tenés derecho a reclamar lo que te corresponde por ley.\n\n¿Tenés dudas sobre tu situación? Escribime por privado y analizo tu caso sin compromiso. ⚖️💼",
+      "cta": "Consultá tu liquidación por WhatsApp gratis",
+      "caption": "¿Sabías que podés reclamar indemnización millonaria si te obligaban a facturar como monotributista?\n\nMirá este caso real donde la justicia condenó a pagar de $24.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia reconoció fraude a la Ley de Contrato de Trabajo y ordenó pagar de $24.800.000.\n• Condena a pagar indemnización por despido, preaviso omitido y multas de la Ley 24.013.\n• Tenés derecho a reclamar la totalidad de tus aportes y diferencias salariales acumuladas.\n\n📲 Consultá tu liquidación por WhatsApp gratis tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #MonotributoEncubierto #Indemnizacion #AbogadoLaboral",
       "hashtags": [
         "#DerechoLaboral",
-        "#Indemnizacion",
         "#Despidos",
-        "#JuicioLaboral",
+        "#MonotributoEncubierto",
+        "#Indemnizacion",
         "#AbogadoLaboral"
-      ]
-    },
-    "imagen_path": "output\\caso_facturacion_monotributo.png"
+      ],
+      "copy_instagram": "¿Sabías que podés reclamar indemnización millonaria si te obligaban a facturar como monotributista?\n\nMirá este caso real donde la justicia condenó a pagar de $24.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia reconoció fraude a la Ley de Contrato de Trabajo y ordenó pagar de $24.800.000.\n• Condena a pagar indemnización por despido, preaviso omitido y multas de la Ley 24.013.\n• Tenés derecho a reclamar la totalidad de tus aportes y diferencias salariales acumuladas.\n\n📲 Consultá tu liquidación por WhatsApp gratis tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #MonotributoEncubierto #Indemnizacion #AbogadoLaboral",
+      "copy_tiktok": "¿Sabías que podés reclamar indemnización millonaria si te obligaban a facturar como monotributista? ⚖️\nMirá este caso real: indemnización de $24.800.000 dictada por la justicia.\nConsultá tu liquidación por WhatsApp gratis desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #MonotributoEncubierto #Indemnizacion #AbogadoLaboral",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+        "hook_3s": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización.",
+        "visual_hook": "[TEXTO EN ROJO GIGANTE: ¿MONOTRIBUTO FRAUDULENTO? CONDENA DE $24.800.000]",
+        "desarrollo": "La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $24.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos.",
+        "indicaciones_visuales": "[GRÁFICA DE SENTENCIA LABORAL + TEXTO: LEY 24.013 DUPLICA INDEMNIZACIÓN]",
+        "cta": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo.",
+        "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $24.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20trabajo%20bajo%20monotributo/en%20negro%20y%20vi%20la%20sentencia%20de%20%2424.800.000%2C%20quiero%20asesorarme%20para%20reclamar%20mi%20indemnizaci%C3%B3n.",
+      "wa_mensaje": "Hola, trabajo bajo monotributo/en negro y vi la sentencia de $24.800.000, quiero asesorarme para reclamar mi indemnización.",
+      "cuenta": "@TuCasoLaboral",
+      "estilo": "infobae",
+      "fuente": "Cámara Nacional del Trabajo - Sala V"
+    }
   },
   {
     "noticia": {
@@ -369,8 +440,14 @@
     "tipo_caso": "Sentencia",
     "monto": "$ 34.800.000",
     "titulo": "CNAT Sala VIII declara nula causa de despido inventada y ordena indemnización agravada con multas",
-    "caratula_path": "output\\nl_lab_cnat_sala8_despido.png",
-    "imagen_path": "output\\nl_lab_cnat_sala8_despido.png",
+    "caratula_path": "output\\nl_lab_cnat_sala8_despido_4x5.png",
+    "imagen_path": "output\\nl_lab_cnat_sala8_despido_4x5.png",
+    "caratulas": {
+      "4:5": "output\\nl_lab_cnat_sala8_despido_4x5.png",
+      "9:16": "output\\nl_lab_cnat_sala8_despido_9x16.png"
+    },
+    "caratulas_json": "{\"4:5\": \"output\\\\nl_lab_cnat_sala8_despido_4x5.png\", \"9:16\": \"output\\\\nl_lab_cnat_sala8_despido_9x16.png\"}",
+    "estilo": "infobae",
     "copy_ig": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $ 34.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
     "caption": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía?\n\nMirá este caso real donde la justicia condenó a pagar de $ 34.800.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La Cámara del Trabajo sentenció el pago de una liquidación completa de $ 34.800.000.\n• Se condenó a la patronal con la indemnización por despido, antigüedad y multas legales.\n• No firmes ningún acuerdo de escribanía sin asesorarte antes con un abogado especialista.\n\n📲 Consultá tu indemnización con un abogado laboralista tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
     "copy_tiktok": "¿Sabías que podés reclamar indemnización agravada si te despidieron o no te liquidaron lo que correspondía? ⚖️\nMirá este caso real: indemnización de $ 34.800.000 dictada por la justicia.\nConsultá tu indemnización con un abogado laboralista desde el enlace de nuestro perfil. #DerechoLaboral #Despidos #Indemnizacion #JuicioLaboral #AbogadoLaboral",
@@ -390,8 +467,8 @@
     "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%24%2034.800.000%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
     "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%24%2034.800.000%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
     "wa_mensaje": "Hola, vi la sentencia de $ 34.800.000 por despido y quiero consultar mi caso y liquidación.",
-    "estado": "deleted",
-    "status": "deleted",
+    "estado": "active",
+    "status": "active",
     "hashtags": [
       "#DerechoLaboral",
       "#Despidos",
@@ -410,7 +487,7 @@
       "titulo": "CNAT Sala VIII declara nula causa de despido inventada y ordena indemnización agravada con multas",
       "resumen": "El trabajador fue despedido con una falsa acusación de pérdida de confianza y supuesto incumplimiento tras haber intimado por escrito el pago de horas extras y diferencias salariales acumuladas a lo largo de 3 años de relación laboral continua.",
       "link": "https://ninolegal.com/dashboard/assistants/legal/laboral-y-previsional/fallo-cnat-sala8-gonzalez-34800",
-      "fecha": "2026-09-27",
+      "fecha": "2026-09-30",
       "nicho": "laboral",
       "vertical": "laboral",
       "tribunal": "Cámara Nacional de Apelaciones del Trabajo - Sala VIII",
@@ -456,7 +533,10 @@
         "texto_completo": "Si te obligaban a facturar como monotributista pero cumplías horario, te corresponden millones de pesos de indemnización. La Cámara Nacional del Trabajo acaba de condenar a una importante empresa a pagar una indemnización de $ 34.800.000 a un empleado que facturaba mensualmente. Los magistrados determinaron que hubo fraude laboral porque existía horario obligatorio y órdenes directas, aplicando todas las multas acumuladas de la Ley 24.013 y salarios caídos. Tocá el enlace de WhatsApp en nuestro perfil para calcular tu liquidación hoy mismo."
       },
       "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%24%2034.800.000%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
-      "wa_mensaje": "Hola, vi la sentencia de $ 34.800.000 por despido y quiero consultar mi caso y liquidación."
+      "wa_mensaje": "Hola, vi la sentencia de $ 34.800.000 por despido y quiero consultar mi caso y liquidación.",
+      "cuenta": "@TuCasoLaboral",
+      "estilo": "infobae",
+      "fuente": "ninolegal_laboral"
     }
   },
   {
@@ -560,6 +640,118 @@
       },
       "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20vi%20la%20sentencia%20de%20%2430%20millones%20por%20despido%20y%20quiero%20consultar%20mi%20caso%20y%20liquidaci%C3%B3n.",
       "wa_mensaje": "Hola, vi la sentencia de $30 millones por despido y quiero consultar mi caso y liquidación."
+    }
+  },
+  {
+    "id": "8cbf4f9707a69813116b87761617e955",
+    "noticia_id": "8cbf4f9707a69813116b87761617e955",
+    "vertical": "laboral",
+    "nicho": "laboral",
+    "tipo_caso": "Sentencia Laboral",
+    "monto": "$24.500.000",
+    "titulo": "La Justicia rechazó el último intento de Alberto Fernández para anular la causa por violencia de género",
+    "caratula_path": "output\\8cbf4f9707a69813116b87761617e955_4x5.png",
+    "imagen_path": "output\\8cbf4f9707a69813116b87761617e955_4x5.png",
+    "caratulas": {
+      "4:5": "output\\8cbf4f9707a69813116b87761617e955_4x5.png",
+      "9:16": "output\\8cbf4f9707a69813116b87761617e955_9x16.png"
+    },
+    "caratulas_json": "{\"4:5\": \"output\\\\8cbf4f9707a69813116b87761617e955_4x5.png\", \"9:16\": \"output\\\\8cbf4f9707a69813116b87761617e955_9x16.png\"}",
+    "estilo": "infobae",
+    "copy_ig": "¿Sabías que podés reclamar indemnización si tu ART te dio el alta sin pagarte nada?\n\nMirá este caso real donde la justicia condenó a pagar de $24.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización integral de $24.500.000 por daño físico y moral.\n• El alta médica de la ART no es definitiva: tenés derecho a una pericia médica judicial imparcial.\n• La ley 24.557 te garantiza el cobro de la indemnización de pago único actualizada.\n\n📲 Consultá tu indemnización por WhatsApp sin costo tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #ReclamosART #IndemnizacionLaboral #JuicioLaboral #AbogadoLaboral",
+    "caption": "¿Sabías que podés reclamar indemnización si tu ART te dio el alta sin pagarte nada?\n\nMirá este caso real donde la justicia condenó a pagar de $24.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización integral de $24.500.000 por daño físico y moral.\n• El alta médica de la ART no es definitiva: tenés derecho a una pericia médica judicial imparcial.\n• La ley 24.557 te garantiza el cobro de la indemnización de pago único actualizada.\n\n📲 Consultá tu indemnización por WhatsApp sin costo tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #ReclamosART #IndemnizacionLaboral #JuicioLaboral #AbogadoLaboral",
+    "copy_tiktok": "¿Sabías que podés reclamar indemnización si tu ART te dio el alta sin pagarte nada? ⚖️\nMirá este caso real: indemnización de $24.500.000 dictada por la justicia.\nConsultá tu indemnización por WhatsApp sin costo desde el enlace de nuestro perfil. #AccidenteDeTrabajo #ReclamosART #IndemnizacionLaboral #JuicioLaboral #AbogadoLaboral",
+    "guion_video": {
+      "duracion_estimada": "35s",
+      "duracion": "35s",
+      "hook": "¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización?",
+      "hook_3s": "¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización?",
+      "visual_hook": "[TEXTO GIGANTE EN ROJO: ¿ALTA MÉDICA TRUCHA DE ART? DE $24.500.000]",
+      "desarrollo": "La justicia laboral acaba de condenar a una aseguradora a pagar una indemnización integral de $24.500.000 a un trabajador que había sido dado de alta en comisión médica sin porcentaje de daño. Los jueces confirmaron en pericia judicial secuelas físicas permanentes ordenando el pago íntegro más intereses y daño moral conforme a la ley de riesgos del trabajo.",
+      "indicaciones_visuales": "[TEXTO EN PANTALLA: PERICIA JUDICIAL IMPARCIAL + LEY 24.557]",
+      "cta": "Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.",
+      "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.",
+      "texto_completo": "¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización? La justicia laboral acaba de condenar a una aseguradora a pagar una indemnización integral de $24.500.000 a un trabajador que había sido dado de alta en comisión médica sin porcentaje de daño. Los jueces confirmaron en pericia judicial secuelas físicas permanentes ordenando el pago íntegro más intereses y daño moral conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis."
+    },
+    "guion_video_json": "{\"duracion_estimada\": \"35s\", \"duracion\": \"35s\", \"hook\": \"¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización?\", \"hook_3s\": \"¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización?\", \"visual_hook\": \"[TEXTO GIGANTE EN ROJO: ¿ALTA MÉDICA TRUCHA DE ART? DE $24.500.000]\", \"desarrollo\": \"La justicia laboral acaba de condenar a una aseguradora a pagar una indemnización integral de $24.500.000 a un trabajador que había sido dado de alta en comisión médica sin porcentaje de daño. Los jueces confirmaron en pericia judicial secuelas físicas permanentes ordenando el pago íntegro más intereses y daño moral conforme a la ley de riesgos del trabajo.\", \"indicaciones_visuales\": \"[TEXTO EN PANTALLA: PERICIA JUDICIAL IMPARCIAL + LEY 24.557]\", \"cta\": \"Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.\", \"cta_video\": \"Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.\", \"texto_completo\": \"¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización? La justicia laboral acaba de condenar a una aseguradora a pagar una indemnización integral de $24.500.000 a un trabajador que había sido dado de alta en comisión médica sin porcentaje de daño. Los jueces confirmaron en pericia judicial secuelas físicas permanentes ordenando el pago íntegro más intereses y daño moral conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.\"}",
+    "whatsapp_link": "https://wa.me/5491100000000?text=Hola%2C%20sufr%C3%AD%20un%20accidente%20laboral%20/%20rechazo%20de%20ART%20y%20vi%20la%20sentencia%20de%20%2424.500.000%2C%20quiero%20consultar%20mi%20caso%20e%20indemnizaci%C3%B3n.",
+    "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20sufr%C3%AD%20un%20accidente%20laboral%20/%20rechazo%20de%20ART%20y%20vi%20la%20sentencia%20de%20%2424.500.000%2C%20quiero%20consultar%20mi%20caso%20e%20indemnizaci%C3%B3n.",
+    "wa_mensaje": "Hola, sufrí un accidente laboral / rechazo de ART y vi la sentencia de $24.500.000, quiero consultar mi caso e indemnización.",
+    "estado": "active",
+    "status": "active",
+    "hashtags": [
+      "#AccidenteDeTrabajo",
+      "#ReclamosART",
+      "#IndemnizacionLaboral",
+      "#JuicioLaboral",
+      "#AbogadoLaboral"
+    ],
+    "puntos_clave": [
+      "La justicia laboral sentenció una indemnización integral de $24.500.000 por daño físico y moral.",
+      "El alta médica de la ART no es definitiva: tenés derecho a una pericia médica judicial imparcial.",
+      "La ley 24.557 te garantiza el cobro de la indemnización de pago único actualizada."
+    ],
+    "noticia": {
+      "id": "8cbf4f9707a69813116b87761617e955",
+      "fuente": "Infobae Judiciales",
+      "titulo": "La Justicia rechazó el último intento de Alberto Fernández para anular la causa por violencia de género",
+      "resumen": "Había planteado la nulidad de toda la investigación como consecuencia del apartamiento del juez Julián Ercolini. La discusión tomó un año entero, y el caso sigue sin elevarse a juicio oral, aunque el fiscal dio por concluidas las averiguaciones",
+      "link": "https://www.infobae.com/judiciales/2026/09/30/la-justicia-rechazo-el-ultimo-intento-de-alberto-fernandez-para-anular-la-causa-por-violencia-de-genero/",
+      "fecha": "Wed, 30 Sep 2026 22:05:45 +0000",
+      "fecha_iso": "2026-09-30",
+      "fecha_timestamp": 1790805945,
+      "nicho": "laboral",
+      "sub_categoria": null,
+      "monto_economico": "",
+      "tribunal": null,
+      "caratula": null,
+      "situacion_hecho": null,
+      "decision_judicial": null,
+      "procesada": 0
+    },
+    "analisis": {
+      "relevante": true,
+      "nicho": "laboral",
+      "vertical": "laboral",
+      "puntaje": 8,
+      "monto": "$24.500.000",
+      "razon": "Fallo judicial laboral: La Justicia rechazó el último intento de Alberto Fernández para anular la causa por violencia de género.",
+      "tipo": "Sentencia Laboral",
+      "titulo_caratula": "La Justicia rechazó el último intento de Alberto Fernández para anular la causa por violencia de género",
+      "gancho": "Trabajador desvinculado o damnificado reclamando liquidación e indemnización conforme a la ley.",
+      "puntos_clave": [
+        "La justicia laboral sentenció una indemnización integral de $24.500.000 por daño físico y moral.",
+        "El alta médica de la ART no es definitiva: tenés derecho a una pericia médica judicial imparcial.",
+        "La ley 24.557 te garantiza el cobro de la indemnización de pago único actualizada."
+      ],
+      "cta": "Consultá tu indemnización por WhatsApp sin costo",
+      "caption": "¿Sabías que podés reclamar indemnización si tu ART te dio el alta sin pagarte nada?\n\nMirá este caso real donde la justicia condenó a pagar de $24.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización integral de $24.500.000 por daño físico y moral.\n• El alta médica de la ART no es definitiva: tenés derecho a una pericia médica judicial imparcial.\n• La ley 24.557 te garantiza el cobro de la indemnización de pago único actualizada.\n\n📲 Consultá tu indemnización por WhatsApp sin costo tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #ReclamosART #IndemnizacionLaboral #JuicioLaboral #AbogadoLaboral",
+      "hashtags": [
+        "#AccidenteDeTrabajo",
+        "#ReclamosART",
+        "#IndemnizacionLaboral",
+        "#JuicioLaboral",
+        "#AbogadoLaboral"
+      ],
+      "copy_instagram": "¿Sabías que podés reclamar indemnización si tu ART te dio el alta sin pagarte nada?\n\nMirá este caso real donde la justicia condenó a pagar de $24.500.000 a un trabajador en tu misma situación.\n\n📌 Puntos clave que tenés que saber:\n• La justicia laboral sentenció una indemnización integral de $24.500.000 por daño físico y moral.\n• El alta médica de la ART no es definitiva: tenés derecho a una pericia médica judicial imparcial.\n• La ley 24.557 te garantiza el cobro de la indemnización de pago único actualizada.\n\n📲 Consultá tu indemnización por WhatsApp sin costo tocando el enlace de WhatsApp en nuestra bio o al pie.\n\n#AccidenteDeTrabajo #ReclamosART #IndemnizacionLaboral #JuicioLaboral #AbogadoLaboral",
+      "copy_tiktok": "¿Sabías que podés reclamar indemnización si tu ART te dio el alta sin pagarte nada? ⚖️\nMirá este caso real: indemnización de $24.500.000 dictada por la justicia.\nConsultá tu indemnización por WhatsApp sin costo desde el enlace de nuestro perfil. #AccidenteDeTrabajo #ReclamosART #IndemnizacionLaboral #JuicioLaboral #AbogadoLaboral",
+      "guion_video": {
+        "duracion_estimada": "35s",
+        "duracion": "35s",
+        "hook": "¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización?",
+        "hook_3s": "¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización?",
+        "visual_hook": "[TEXTO GIGANTE EN ROJO: ¿ALTA MÉDICA TRUCHA DE ART? DE $24.500.000]",
+        "desarrollo": "La justicia laboral acaba de condenar a una aseguradora a pagar una indemnización integral de $24.500.000 a un trabajador que había sido dado de alta en comisión médica sin porcentaje de daño. Los jueces confirmaron en pericia judicial secuelas físicas permanentes ordenando el pago íntegro más intereses y daño moral conforme a la ley de riesgos del trabajo.",
+        "indicaciones_visuales": "[TEXTO EN PANTALLA: PERICIA JUDICIAL IMPARCIAL + LEY 24.557]",
+        "cta": "Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.",
+        "cta_video": "Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis.",
+        "texto_completo": "¿Sufriste un accidente de trabajo y la ART te dio el alta sin fijarte indemnización? La justicia laboral acaba de condenar a una aseguradora a pagar una indemnización integral de $24.500.000 a un trabajador que había sido dado de alta en comisión médica sin porcentaje de daño. Los jueces confirmaron en pericia judicial secuelas físicas permanentes ordenando el pago íntegro más intereses y daño moral conforme a la ley de riesgos del trabajo. Tocá el enlace de WhatsApp en nuestro perfil para revisar el dictamen de tu ART gratis."
+      },
+      "wa_link": "https://wa.me/5491100000000?text=Hola%2C%20sufr%C3%AD%20un%20accidente%20laboral%20/%20rechazo%20de%20ART%20y%20vi%20la%20sentencia%20de%20%2424.500.000%2C%20quiero%20consultar%20mi%20caso%20e%20indemnizaci%C3%B3n.",
+      "wa_mensaje": "Hola, sufrí un accidente laboral / rechazo de ART y vi la sentencia de $24.500.000, quiero consultar mi caso e indemnización.",
+      "cuenta": "@TuCasoLaboral",
+      "estilo": "infobae",
+      "fuente": "Infobae Judiciales"
     }
   }
 ]

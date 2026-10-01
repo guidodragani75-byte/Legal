@@ -30,6 +30,7 @@ TIER_MODULES = [
     ("Tier 2: Boundary & Corner Cases", "test_tier2_boundaries"),
     ("Tier 3: Pairwise Combinations", "test_tier3_pairwise"),
     ("Tier 4: Real-World Scenarios", "test_tier4_scenarios"),
+    ("Redesign E2E (R1 - R4 Tiers 1 - 4)", "test_redesign_e2e"),
 ]
 
 
